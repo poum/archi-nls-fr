@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cheatsheet
+      title="Créer une vue cartographique">
+   <intro>
+   <description>Cet aide-mémoire vous montre comment créer une vue cartographique de vos vues existantes. Une vue cartographie contient des boîtes graphiques qui sont des raccourcis qui, lorsque on y fait un double clic, ouvrent la vue liée.<br/>
+     <br/>Vous pouvez créer celles-ci en faisant glisser une vue de l'arborescence dans une vue de diagramme ouverte.<br/>
+     <br/>
+     Cet aide-mémoire peut en créer une pour vous automatiquement, pourvu que la vue arborescente des modèles soit ouverte, qu'un modèle ArchiMate y soit sélectionné et que le modèle possède plus d'une vue.
+      </description>
+   </intro>
+   <item
+         skip="true"
+         title="Ouvrir l'arbre des modèles">
+      <description>
+        D'abord, vous devez vous assurer que l'arborescence des modèles est ouverte. Vous pouvez alors soit faire ça manuellement à partir du menu principal <b>Fenêtre &gt; Modèles</b> ou automatiquement avec cet aide-mémoire.
+      </description>
+      <action
+      		required="false"
+      		pluginId="com.archimatetool.help"
+      		class="com.archimatetool.help.cheatsheets.ShowViewCheatSheetAction" 
+            param1="com.archimatetool.editor.treeModelView"/>
+            
+   </item>
+   <item
+         title="Créer une vue carthographique">
+      <description>
+        Créer ici automatiquement une vue cartographique. <b>Assurez-vous qu'un modèle est sélectionné dans l'arborescence des modèles et qu'il possède plus d'uene vue.</b>
+      </description>
+      <action
+      		required="false"
+      		pluginId="com.archimatetool.help"
+      		class="com.archimatetool.help.cheatsheets.CreateMapViewCheatSheetAction"/>
+   </item>
+   <item
+         title="Réalisé !">
+   <description>
+      Ca y est. Réalisé !
+      </description>
+   </item>
+</cheatsheet>

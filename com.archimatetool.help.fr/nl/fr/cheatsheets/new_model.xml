@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cheatsheet
+      title="Créer un nouveau modèle">
+   <intro>
+      <description>
+        Cet aide-mémoire est une description étape par étape de la façon de créer un modèle ArchiMate basique.
+      </description>
+   </intro>
+   <item
+         skip="false"
+         title="Ouvrir l'arborescence des modèles">
+      <description>
+        De façon à voir le modèle dans l'arborescence des modèles, assurez-vous que la fenêtre de l'arborescence des modèles soit visible.
+      </description>
+      <action
+      		required="false"
+      		pluginId="com.archimatetool.help"
+      		class="com.archimatetool.help.cheatsheets.ShowViewCheatSheetAction" 
+            param1="com.archimatetool.editor.treeModelView"/>
+            
+   </item>
+   <item
+         title="Ajouter un nouveau modèle">
+      <description>
+        Ajoutez un nouveau modèle en cliquant sur le bouton <b>&quot;Nouveau modèle vide&quot;</b> sur la barre d'outils ou en faisant un clic droit dans la fenêtre de l'arborescence des modèles et en sélectionnant <b>&quot;Nouveau modèle vide&quot;</b>.
+      </description>
+      <action
+      		required="false"
+      		pluginId="com.archimatetool.editor"
+      		class="com.archimatetool.editor.actions.NewArchimateModelAction"/>
+   </item>
+   <item
+         title="Ajouter des éléments au modèle">
+      <description>
+          Vous devriez maintenant voir la structure basique des dossiers de votre nouveau modèle dans l'arborescence des modèles. Ainsi, vous devriez voir ouverte la <b>fenêtre du diagramme des modèles</b>.
+          C'est là que vous pouvez construire visuellement votre modèle en y faisant glisser des éléments et des connexions depuis la palette dans le diagramme.
+          <br/><br/>
+Vous pouvez également des éléments directement dans l'arborescence des modèles en faisant un clic droit sur un diossier et en sélectionnant l'action de menu <b>&quot;Nouveau&quot;. Une fois ajoutés, les ékéments peuvent être glissés depuis l'arborescence vers kle diagramme.
+      </description>
+   </item>
+</cheatsheet>

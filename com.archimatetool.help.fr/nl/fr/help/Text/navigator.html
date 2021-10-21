@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>La fenêtre de navigation</title>
+<link href="../Styles/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <h1 class="pagebreak">La fenêtre de navigation</h1>
+   
+    <p>La fenêtre de navigation affiche le concept de modélisation actuellement sélectionné et toutes ses relations avec d'autres concepts. Elle est utilisée pour afficher et permettre la navigation entre les concepts connectés via leurs relations et est utilisée conjointement avec la fenêtre de l'arborescence des modèles et les vues.</p>
+   
+    <p>L'arborescence des modèles se comporte commme un dépôt "à plat" pour tous les éléments, les relations et les vues dans un modèle. Les vues sont des configurations graphiques de ces concepts. Cependant, le navigateur est capable d'afficher toutes les relations d'un concept au niveau du modèle, quelque soit la façon dont elles sont présentées dans une vue.</p>
+   
+    <p>Pour utiliser la fenêtre de navigation, choisissez un élément ou une relation dans l'arborescence des modèles ou dans une vue. L'arborescence du navigateur se mettra à jour pour refléter la situation actuelle. L'arborescence affiche le concept "racine" sélectionné et toutes les relations qui en proviennent et tous les concepts "cibles" de ces relations:</p>
+    
+    <img src="../Images/navigator1.png"/>
+    <p class="caption">La fenêtre de navigation</p>
+    <p>Dans la capture d'écran ci-dessus, l'utilisateur a choisi l'élément "Système CRM". Il y a trois relations de réalisation entre l'élément sélectionné et les trois éléments "Service d'administration des clients", "Service de demande d'assurance" et "CIS". À partir de ces trois éléments, d'autres nouvelles relations sont affichées entre eux et leurs concepts cibles.</p>
+   
+    <p>Il est toutefois possible de "descendre" dans l'arborescence du navigateur et de le traverser de concept en concept en le suivant et ses relations filles de la source vers la cible.</p>
+   
+    <p>Un sous-concept sélectionné peut devenir le concept "racine" soit en double-cliquant dessus dans l'arborescence ou en cliquant sur le bouton "Aller dans" de la barre d'outils de la fenêtre:</p>
+    
+    <img src="../Images/navigator2.png"/>
+    <p class="caption">Le bouton "Aller dans"</p>
+   
+    <p>Réciproquement, presser le bouton "Retour" vous ramène au concept précédemment sélectionné:</p>
+    
+    <img src="../Images/navigator3.png"/>
+    <p class="caption">Le bouton "Retour"</p>
+   
+    <p>Le bouton "Accueil" vous ramène au concept racine principal qui avait été sélectionné au départ:</p>
+    
+    <img src="../Images/navigator4.png"/>
+    <p class="caption">Le bouton "Accueil"</p>
+   
+    <p>Par défaut, le navigateur affiche les relations qui partent du concept source vers le concept cible. Il est possible pour renverser ce flux pour afficher les relations des concepts qui partent de la cible vers la source en cliquant sur le bouton "Afficher les relations sources" dans la barre d'outils de la fenêtre:</p>
+    
+    <img src="../Images/navigator5.png"/>
+    <p class="caption">Afficher le mode des relations sources</p>
+   
+    <p>Dans la capture d'écran ci-dessus l'élément "Système CRM" est la cible de deux relations "Utilisé par". Donc le flux part de "l'unité centrale" vers "Service des fichiers des réclamations" vers le "Système CRM" et de "Serveur de fichier NAS" à "Service du fichier client" puis "Système CRM".
+    <p>Le concept sélectionné peut être épinglé si nécessaire en sélectionnent le bouton "épingler" dans la fenêtre du navigateur:</p>
+    
+    <img src="../Images/navigator6.png"/>
+    <p class="caption">Le bouton "épingler"</p>
+   
+    <p>Il est également possible de glisser-déposer tout élément sélectionné et/ou relation depuis l'arborescence du navigateur vers une vue, exactement de la même façon que de les tirer de l'arborescence des modèles vers une vue (voir <a href="view_addexisting.html">Ajouter des éléments et des relations depuis l'arborescence des modèles vers une vue</a>)</p>
+        
+    <p>&nbsp;</p>
+
+</body>
+</html>
