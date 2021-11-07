@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: French Language Pack
+Bundle-SymbolicName: com.archimatetool.model.fr
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: Philippe Poumaroux
+Fragment-Host: com.archimatetool.model
+Bundle-ClassPath: com.archimatetool.model.fr.jar
+Automatic-Module-Name: com.archimatetool.model.fr
