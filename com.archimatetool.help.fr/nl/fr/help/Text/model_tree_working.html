@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Travailler dans l'arborescence des modèles</title>
+<link href="../Styles/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <h2>Travailler dans l'arborescence des modèles</h2>
+    <p>Généralement, vous pouvez ajouter, supprimer, dupliquer, déplacer et renommer des concepts et des vues dans l'arborescence des modèles. Vous pouvez également créer des dossiers dans le groupe des dossiers principaux de façon à regrouper ensemble des concepts.</p>
+    
+    <br/>
+
+    <h2>Glisser déposer</h2>
+    <p>Les objets sont gérés par glisser déposer dans les dossiers. Notez que vous ne pouvez pas déplacer des concepts d'un type de dossier principal dans un autre. Par exemple, les concepts Métier ne peuvent être que dans le dossier "Métier" ou l'un de ses sous-dossiers et les relations ne peuvent être que dans le dossier "Relations" ou l'un de ses sous-dossiers.</p>
+
+    <br/>
+
+    <h2>Couper Coller</h2>
+    <p>Enumeration plus de glisser déposer, vous pouvez couper et coller des objets d'un dossier à l'autre. Après avoir choisi des objets dans l'arborescence, sélectionnez "Couper" puis, après avoir choisi le répertoire cible, sélectionnez "Coller" pour déplacer les objets.</p>
+    
+    <br/>
+
+    <h2>Supprimer des objets de l'arborescence des modèles</h2>
+    <p>Pour supprimer un ou plusieurs objets dans l'arborescence des modèles, sélectionnez les puis choisissez "Supprimer" dans le menu principal "Modifier" ou depuis la barre d'outils principale.</p>
+   
+    <p>Notez que si un concept que vous souhaitez supprimer apparaît dans une ou plus vues, vous serez averti qu'il est référencé dans ces vues. <strong>Si vous supprimer ensuite le concept de l'arborescence, vous le supprimerez également de toutes les vues dans lesquelles il est référencé.</strong></p>
+    <img src="../Images/delete_warning.png"/>
+    <p class="caption">Avertissement relatif à la suppression d'un concept</p>
+    
+    <br/>
+    
+    <h2>Renommer un objet dans l'arborescence des modèles</h2>
+    <p>Pour renommer un objet dans l'arborescence des modèles, choisir "Renommer" dans le menu principal "Modifier" ou dans le menu contextuel obtenu par clic droit. Vous pouvez également le renommer dans la <a href="properties_element.html">fenêtre des propriétés</a>.</p>
+    
+    <br/>
+    
+    <h2>Dupliquer un élément ou une vue dans l'arborescence des modèles</h2>
+
+    <p>Pour dupliquer des éléments ou des vues dans l'arborescence des modèles, choisissez "Dupliquer" dans le menu principal "Modifier" ou depuis le menu contextuel obtenu par clic droit. Notez que les vues dupliquées contiennent des références vers les concepts originaux copiés.</p>
+    
+    <br/>
+    
+    <h2>Modifier les propriétés d'un objet dans l'arborescence des modèles</h2>
+    <p>Pour modifier les propriétés pour un objet sélectionné dans l'arborescence des modèles, choisissez l'objet dans l'arborescence et ouvrir la fenêtre des propriétés soit en double cliquant sur l'objet ou via le menu principal "Fenêtre" ou encore par la barre d'outils principale.</p>
+    
+    <p>Chaque objet dans l'arborescence des modèles possède différentes propriétés qui peuvent être définies ou visualisées dans la fenêtre des propriétés. Pour avoir plus d'information, voir la section <a href="properties_window.html">La fenêtre des propriétés</a>.</p>
+    <p>Note - certaines propriétés ne peuvent être modifiées que lorsque l'objet est sélectionné dans une vue (par exemple, la couleur de remplissage, la police de caractères ou la largeur de la ligne).</p>
+    
+    <br/>
+    
+    <h2>Concepts dans l'arborescence des modèles et dans les vues</h2>
+   
+    <p>Les concepts présents dans l'arborescence des modèles peuvent être ajoutés à n'importe quel nombre des diagrammes de vues dans le modèle en les tirant sur le canevas de la Vue (voir la section "Vues"). Quand un concept a été ajouté ou utilisé dans une Vue, la police de caractères utilisée dans l'arborescence des modèles pour ce concept est normale. Cependant, si le concept n'existe que dans l'arborescence des modèles et n'est utilisé dans aucune des vues, il est affiché avec une police de caractères en <em>italique</em>:
+    <img src="../Images/model-tree-italic.png"/>
+    <p class="caption">Les polices de caractères en italique montrent les concepts qui ne sont pas utilisés dans les vues</p>
+    <p>Ceci facilite la détection des concepts qui peuvent être devenus superflus et peuvent être supprimés.</p>
+    <br/>
+   
+    <h2>Synchroniser les sélections dans l'arborescence des modèles et dans une vue</h2>
+   
+    <p>Quand on sélectionne des concepts dans l'arborescence des modèles et dans les diagrammes des vues, il est parfois pratique de synchronise la sélection entre les concepts des deux fenêtres. Cliquez sur le bouton "Lier à la vue" dans la fenêtre de l'arborescence des modèles active ou désactive la synchronisation des concepts sélectionnés entre l'arborescence des modèles et un diagramme:</p>
+    <img src="../Images/model-tree-sync.png"/>
+    <p class="caption">Le bouton "Lier à la vue"</p>
+    <p>Ce bouton est une bascule et peut être activé ou désactivé.</p>
+    <p>La sélection synchronisée est possible sur plusieurs concepts sélectionnés à la fois.</p>
+    <p>Notez que la sélection synchronisée n'est possible que si une vue pertinente est ouverte. Choisir un concept dans l'arborescence des modèles ne synchronisera pas une sélection dans une vue si cette vue ne contient pas ce ou ces concepts particuliers.</p>
+    <br/>
+    
+    <h2>Explorer</h2>
+
+    <p>En utilisant les boutons d'exploration, "Accueil", "Retour" et "Aller dans", il est possible d'explorer dans un modèle ou un dossier. Le chemin vers l'objet ou le dossier actuellement sélectionné est affiché dans la barre d'état.</p>
+
+    <img src="../Images/model-tree-drill.png"/>
+    <p class="caption">Les boutons "Exploration"</p>
+    
+    <p>&nbsp;</p>
+    
+</body>
+</html>
