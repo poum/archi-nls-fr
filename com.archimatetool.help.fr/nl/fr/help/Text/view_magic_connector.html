@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Ajouter de nouvelles relations et de nouveaux éléments à la vue avec le connecteur magique</title>
+<link href="../Styles/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <h2>Ajouter de nouvelles relations et de nouveaux éléments à la vue avec le connecteur magique</h2>
+
+    <p>Connecter un élément à un autre dans une vue dépend de si la relation est autorisée selon la spécification ArchiMate. Par exemple, vous ne pouvez pas connecter une relation d'affectation d'un composant applicatif à un Acteur métier. A moins que vous ne soyez très familier des règles gouvernant les relations dans ArchiMate, il peut être frustrant de trouver les relations autorisées entre un élément et un autre. Le "Connecteur magique" résoud ce problème.</p>
+    
+    <img src="../Images/palette_magic.png"/>
+    <p class="caption">le connecteur magique dans la palette</p>
+
+    <p>Le connecteur magique a deux usages - d'abord pour créer une nouvelle connexion autorisée entre un élément et un autre, et ensuite pour créer un nouvel élément et une connexion autorisée entre l'élément source et l'élément nouvellement créé.</p>
+    
+    <p>Pour créer une connexion entre un élément source et un élément cible en utilisant le connecteur magique suivant ces étapes:</p> 
+    
+    <ol start="1" type="1">
+      <li>Choisir l'outil Connecteur magique dans la palette</li>
+      <li>Cliquer sur l'élément source dans la vue</li>
+      <li>Cliquer sur l'élément cible dans la vue</li>
+      <li>Un menu surgissant apparaîtra montrant les relations autorisées entre les deux éléments. Choisir le type requis dans le menu. Il est possible de créer une relation de l'élément source vers l'élément cible, mais aussi dans l'ordre inverse de l'élément cible vers l'élément source. Les deux options directionnelles sont séparées dans le menu surgissant.</li>
+    </ol>
+    
+    <img src="../Images/magic_conn1.png"/>
+    <p class="caption">Dessiner une connexion en utilisant le connecteur magique</p>
+   
+    <p>Pour créer un nouvel élément et une connexion en une seule opération utilisant le connecteur magique suivant ces étapes:</p>
+    
+    <ol start="1" type="1">
+      <li>Choisir l'outil du connecteur magique dans la palette</li>
+      <li>Cliquer sur l'élément source</li>
+      <li>Cliquer sur une zone vierge du canevas de la Vue ou sur le symbole d'un Groupe</li>
+      <li>Un menu surgissant à plusieurs niveaux va apparaître affichant tous les éléments et les relations autorisées entre les deux. Choisir l'élément requis et la connexion depuis le menu</li>
+    </ol>
+
+    <p>Dans l'exemple suivant, un nouvel élément Rôle métier sera créé en même temps qu'une relation d'affectation connectée à l'élément Acteur métier choisi au départ.</p>
+    
+    <img src="../Images/magic_conn2.png"/>
+    <p class="caption">Utiliser le connecteur magique pour créer un nouvel élément et une connexion</p>
+
+    <p>Si vous maintenez appuyée la touche Ctrl (ou la touche Commande sur Mac) en même temps que vous cliquez sur une zone vierge du canevas les éléments seront d'abord affichés suivis par les connexions dans les menus surgissant (ce comportement peut être inversé dans les <a href="prefs_connections.html">Préférences</a>):</p>
+    
+    <img src="../Images/magic_conn3.png"/>
+    <p class="caption">Utiliser le connecteur magique pour créer un nouvel élément et une connexion en appuyant la touche Ctrl / Commande</p>
+        
+    <p>&nbsp;</p>
+
+</body>
+</html>
