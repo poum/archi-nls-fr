@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Ajouter de nouveaux éléments et de nouvelles relations à la vue</title>j
+<link href="../Styles/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <h2>Ajouter de nouveaux éléments à la vue depuis la palette</h2>
+	
+	<p>Pour créer et ajouter de nouveaux éléments à la vue, sélectionnez l'élément requis dans la <a href="view_palette_creation_tools.html">Palette</a>i et soit cliquez ou tirez le nouveau symbole sur la zone du canevas. Une fois que le symbole a été ajouté au canevas, vous pouvez le redimensionner et le repositionner avec les actions habituelles par tirer glisser.</p>
+
+  <p>Ajouter des éléments à la vue les ajoute automatiquement à l'arborescence des modèles</h3>
+
+	<p>Il est important de comprendre qu'ajouter des éléments (et des relations) à une vue depuis la palette ajoute automatiquement ces éléments à l'arborescence des modèles également. Par exemple, tirer un élément "Acteur métier" sur le caneas crée à la fois un symbole sur la vue appelée "Acteur métier" et également un nœud dans <a href="model_tree.html">l'arborescence des modèles</a> avec le même nom.</p>
+
+  <p>De plus, si vous supprimez un élément dans une vue, l'élément correspondant dans l'arborescence des modèles n'est <em>pas</em>. C'est parce que l'élément peut être référencé dans une autre vue de la modélisation. Pour supprimer complètement l'élément, vous devez le supprimer dans l'arborescence des modèles ou utiliser l'élément de menu invoqué via un clic droit "Supprimer de la modélisation".</p>
+
+  <p>Vous pouvez modifier le nom de l'élément directement en cliquant sur la zone de texte d'un symbole. Double cliquer sur le symbole ouvre la <a href="properties_window.html">fenêtre des propriétés</a> dans laquelle vous pouvez modifier les propriétés de l'élément sélectionné.</p>
+
+	<br/>
+
+	<h2>Modifier les propriétés des éléments de la vue</h2>
+
+  <p>Les propriétés d'un élément sélectionné dans une vue peuvent être modifiés dans la <a href="properties_window.html">fenêtre des propriétés</a>. Pour ouvrir la fenêtre des propriétés, vous pouvez soit double cliquer sur le symbole ou sélectionner le symbole et ouvrir la fenêtre depuis la barre d'outils principale ou depuis le menu principal. Chaque élément dans la vue possède différentes propriétés qui peuvent être définies ou consultées dans la fenêtre des propriétés. Pour plus d'informations, voir la section <a href="properties_window.html">La fenêtre des propriétés</a>.</p>
+
+  <p>Double cliquer sur un élément dans une vue ouvre la <a href="properties_note.html">fenêtre des propriétés</a>, cliquer simplement sur le champ texte d'un élément déjà sélectionné vous permet de modifier directement le texte de l'élément.</p>
+
+	<br/>
+
+  <h2>Ajouter de nouvelles relations (Connexions) à la vue depuis la palette</h2>
+
+  <p>Pour ajouter de nouvelles relations (connexions) à la vue sélectionnée, choisissez l'outil de connexion requis dans la <a href="view_palette_creation_tools.html">Palette</a> et tirer d'un élément de la vue vers un autre de la même vue.</p>
+
+  <p>De la même façon d'ajouter des éléments de la palette, ajouter une relation à une vue ajoute également automatiquement à l'aborescence des modèles, dans le dossier "Relations".</p>
+
+  <p>Quand on ajoute une nouvelle connection à une vue, si le même type de relation de modèles existe déjà entre les éléments source et cible, une boîte de dialogues va apparaître et vous donner les options pour référencer cette relation de modéle d'une connexion ou pour créer une nouvelle connexion <i>et</i> une relation du modèles:</p>
+
+	<img src="../Images/connection_reuse_dialog.png" alt="Reuse Dialog"/>
+	<p class="caption">Une boîte de dialogue fournit l'option de réutiliser une relation du modèle.</p>
+
+	<br/>
+
+	<p class="boxout"><strong><img src="../Images/tip.png" class="tipImage"/>Relations, règles et contrôle.</strong><br/>Les élément ArchiMatei peuvent se connecter à d'autres éléments selon un ensemble donné de relations (connexions). Certaines relations sont permises, d'autres ne le sont pas. Si une relation n'est pas autorisée, le curseur affichera un symbole "Non autorisé", un cercle avec une ligne diagnole. Si la relation est autorisée, cela affichera le symbole d'une "prise". Some relationships are allowed, others are not. If a relationship is not allowed the cursor will show as a "Not Allowed" symbol, a circle with a diagonal line. If a relationship is allowed, it will show as a "plug" symbol.</p>
+
+	<br/>
+
+	<h2>Informations sur les connexions</h2>
+  i
+  <p>Une fois qu'une relation (connexion) a été créée entre des éléments, certaines informations utiles peuvent être révélées lorsque la souris survole la connexion pour faire apparaître une infobulle. L'infobulle afficher le nom de la relation, son type et un texte qui décrit la nature de la relation entre les éléments sources et destination.</p>
+
+	<img src="../Images/connection_tooltip.png" alt="Connection Tooltip"/>
+	<p class="caption">Une infobulle affiche des informations utiles quand on survole une connexion</p>
+	
+	<br/>
+
+	<h2>Ajouter des relations circulaires (connexions)</h2>
+  <p>Vous pouvez ajouter une relation circulaire (connexion) si vous le souhaitez. C'est une relation dont les éléments cible et source sont les mêmes. Vous pouvez créer une connection d'un élément vers lui-même en sélectionnant la relation requise dans la palette, en cliquant une fois sur l'élément puis en cliquant de nouveau sur cet élément:</p>
+
+	<img src="../Images/circular_connection.png" alt="Circular connection"/>
+	<p class="caption">Une relation circulaire</p>
+
+	<p>&nbsp;</p>
+	
+</body>
+</html>

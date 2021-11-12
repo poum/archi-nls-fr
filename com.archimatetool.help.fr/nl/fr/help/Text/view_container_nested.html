@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Les éléments conteneurs et relations des éléments imbriqués</title>
+<link href="../Styles/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <h2>Les éléments conteneurs et relations des éléments imbriqués</h2>
+
+    <p>Chaque élément graphique (à l'exception des notes et des jonctions) peut agir en tant qu'élément conteneur pour d'autres éléments. Tirer et déposer un élément dans un autre élément signifie que ce dernier devient un enfant de l'élément parent. Ceci est utile pour représenter des relations de type contenance telles que la Composition, l'Agrégation et l'Association ou un regroupement pratique.</p>
+    
+    <p>Dans la capture d'écran suivante, les éléments "Enregistrer", "Accepter", "Évaluer" et "Payer" sont des éléments fils de l'élément parent "Processus de gestion des réclamations":</p>
+    
+    <img src="../Images/container1.png"/>
+    <p class="caption">Éléments fils contenus dans un élément parent</p>
+    
+    <br/>
+   
+    <p>Quand on tire des élémentsd dans et sur d'autres éléments, un indice visuel est fourni pour indiquer que l'élément tiré sera déplacé dans l'élément parent (conteneur). Il s'agit d'un surlignage bleu autour de l'élément cible qui apparaît lorsque l'élément est tiré sur lui:</p>
+    
+    <img src="../Images/container2.png"/>
+    <p class="caption">Un élément fils ayant été tiré dans un élément conteneur. Le conteneur est surligné en bleu.</p>
+    
+    <br/>
+   
+    <h2>Créer, montrer et cacher des relations entre les parents imbriqués/les éléments fils</h2>
+   
+    <p>La <a href="http://www.opengroup.org/archimate/doc/ts_archimate/">spécification ArchiMate</a> établit que certaines relations peuvent également être exprimées en imbriquant des éléments de modélisation. C'est-à-dire, une connexion explicite n'a pas besoin d'être dessinée entre le parent et les éléments fils mais peut être représentée sous forme d'un conteneur imbriquant d'autres éléments.</p>
+
+    <p>Archi sait gérer cette convention avec la <strong>gestion automatique de relation</strong> (Automatic Relationship Management ou ARM). Ce système s'assure que les relations sont automatiquement créées et cachées entre le parent qualifiant/les éléments fils. Le système peut être configuré pour répondre aux besoins de l'utilisateur. Voir les <a href="prefs_connections.html">préférences des connexions</a> pour configurer l'ARM.</p>
+
+    <p>Le meilleur moyen d'expliquer le système <strong>Automatic Relationship Management</strong> (ARM) est d'utiliser un exemple.</p>
+    
+    <h3>Exemple - Processus imbriqués dans une relation composite</h3>
+
+    <p>Supposons que l'utilisateur possède un élément Processus métier "Processus de gestion des réclamations" qui agira comme un élément conteneur ("parent") pour quatre sous-processus, "Enregistrer", "Accepter", "Évaluer" et "Payer". La relation entre le processus parent et les sous-processus serait normalement exprimée sous forme de quatre relations de composition. Ceci peut être dessiné de manière conventionnelle en utilisant des lignes de connexion comme suit:</p>
+
+    <img src="../Images/container3.png"/>
+    <p class="caption">Relation de composition entre le parent et les processus fils</p>
+
+    <p>Cependant, ceci n'est visuellement pas aussi clair que si les sous-processus étaient placés dans le conteneur processus parent.</p>
+    
+    <p>Nous pouvons résoudre ce problème en activant le système ARM dans les <a href="prefs_connections.html">Préférences</a>. Ceci assure que lorsque les sous-processus sont placés dans l'élément parent les connexions sont cachées dans la Vue, mais sont toujours présentes dans le modèle sémantique réel. En tirant les éléments fils dans et hors de l'élément parent, kes connexions explicites sont respectivement cachées et affichées. Les connexions cachées sont des connexions "implicites".</p>
+    
+    <img src="../Images/container1.png"/>
+    <p class="caption">Les connexions sont maintenant cachées dans la vue</p>
+    
+    <h3>Ajouter de nouveaux éléments à un élément parent</h3>
+
+    <p>Ajouter de nouveaux éléments à un élément parent dans une vue à partir de la palette ou en tirant déposant l'arborescence des modèles résulte en l'apparition d'une boîte de dialogue demandant si une nouvelle relation doit être créée entre le parent et les éléments fils:</p>
+    
+    <img src="../Images/container6.png"/>
+    <p class="caption">Fenêtre de dialogue pour créer une nouvelle relation imbriquée</p>
+
+    <p>Notez que la fenêtre de dialogue n'affichera que les relations valides entre les éléments parent et enfants et seulement celles définies dans les <a href="prefs_connections.html">Préférences</a>. Les relations valides entre l'élément enfant et le parent peuvent également être sélectionnées. Elles sont désignées en tant que "(inversées)".</p>
+
+    <p>Si vous ne souhaitez pas créer une nouvelle relation, choisissez "Aucune".</p>
+    
+    <h3>Déplacer des éléments existants vers un élément parent</h3>
+
+    <p>Si plus d'un élément est déplacé (opération de glisser déposer) vers l'élément parent dans une vue ou est glissé déposé depuis l'arborescence des modèles sur un élément parent, et qu'il n'existe pas de relation préférée entre l'élément parent et les éléments fils, alors une boîte de dialogue est affichée offrant de créer une nouvelle relation entre l'élément parent et les éléments fils. Vous pouvez choisir un type différent de relation pour chacun des éléments fils:</p>
+    
+    <img src="../Images/container7.png"/>
+    <p class="caption">Fenêtre de dialogue pour créer plus d'une relation</p>
+
+    <p>Si vous ne souhaitez pas créer une nouvelle relation pour un élément, choisissez "(aucune)" dans le menu déroulant. Pour choisir le même type de relation dans le menu déroulant, maintenez appuyée la touche Ctrl/Commande et choisissez.</p>
+    
+    <p>&nbsp;</p>
+
+</body>
+</html>

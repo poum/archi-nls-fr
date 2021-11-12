@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Copier, coller, sélectionner et supprimer des éléments</title>
+<link href="../Styles/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <h2>Sélectionner des éléments dans une vue</h2>
+
+    <p>Les éléments de diagramme et les connexions peuvent être sélectionnés dans la vue en cliquant sur eux avec l'outil de sélection ou via l'outil de délimitation. Pour plus d'information sur ces outils, voir l'<a href="view_palette_tools.html">outil de sélection de la palette</a>.</p>
+
+    <h2>Copier et coller des éléments dans une vue</h2>
+
+    <p>Les éléments du diagramme peuvent être coupés, copiés et collés dans les vues. Il existe, cependant, certaines contraintes sur la façon dont ceci fonctionne:</p>
+    
+    <ul>
+      <li>Si un élément est collé dans une Vue <em>depuis le même modème</em> dans lequel l'élément <em>existe déjà dans cette vue</em> alors un nouvel élément du modèle et un nouvel élément du diagramme son créés pour la vue. Le nouvel élément est une copie de l'original. Toutes les connexions sont également nouvellement créées en tant que copies.</li>
+      <li>Si un élément est collé dans une vue <em>depuis le même modèle</em> dans lequel l'élément <em>n'existe pas déjà</em> alors un nouvel élément de diagramme est créé pour la vue et l'élément du modèle original est référencé. Ceci est équivalent à tirer l'élément depuis l'arborescence des modèles dans la vue. Toutes les connexions sont également référencées.</li>
+    </ul>
+
+    <p>Si un élément est collé dans une vue <em>depuis un modèle différent</em> alors un nouvel élément de modèle et un nouveau élément de diagramme sont crées pour la vue. Le nouvel élément est une copie de l'original. Toutes les connexions sont également nouvellement créées en tant que copies.</p>
+    
+
+    <p>Si vous choisissez l'option de menu "Collage spécial" plutôt que "Coller", alors vous changer ce comportement de telle sorte que des références des éléments copiés sont créées plutôt que de nouveaux éléments. Vous pouvez configurer ce comportement pour cette fonctionnalité dans les préférences.</p>
+    
+    <p class="boxout"><img src="../Images/tip.png" class="tipImage"/>Si vous copiez certains éléments du diagramme puis que vous cliquez sur la vue avant de coller, les éléments copiés seront copiés à l'endroit où vous avez cliqué.</p>
+    
+    <br/>
+    
+    <h2>Copier au format image dans le presse-papier</h2>
+
+    <p>Une vue (diagramme) peut être copiée sous forme d'image dans le presse papier système. Ceci est disponible à partie de la commande de menu "Copier au format image dans le presse papier" du menu principal "Modifier" ou en faisant un clic droit sur la vue et en choisissant l'élément de menu dans le menu contextuel. Cette commande de menu n'est disponible que si une vue est ouverte et sélectionnée. La combinaison de touches pour le raccourci est Ctrl-Shift-C (touche Commande sur Mac). Une fois que la vue est copiée dans le presse papier dy système, il peut être collé dans d'autres applications telles qu'un traitement de texte ou des outils de dessin.</p>
+    
+    <br/>
+
+    <h2>Supprimer des éléments et des relations (connexions) dans une vue</h2>
+
+    <p>Les éléments ou connexions choisis dans une vue peuvent être supprimés d'une vue en choisissant l'élément de menu "Supprimer de la vue" du menu principal "Modifier", depuis la barre d'outils principale ou depuis le menu obtenu par clic droit. <em>Note - cette action supprime ces éléments de la vue, pas de la modélisation. Pour supprimer complètement l'élément, vous devez le supprimer dans l'arborescence des modèles ou choisir "Supprimer de la modélisation".</em></p>
+    
+    <br/>
+    
+    <h2>Sélectionner dans l'arborescence des modèles</h2>
+    <p>Cet élément de menu est disponible quand on fait un clic droit sur un élément ou une relation dans une vue. Ceci va sélectionner l'élément de modèle correspondant dans l'arborescence des modèles.</p>
+    
+    <br/>
+    
+    <h2>Supprimer de la modélisation</h2>
+    <p>Cet élément de menu est disponible quand on fait un clic droit sur un élément ou une relation dans une vue. Les éléments sélectionnés ou les relations sont alors supprimés de la modélisation elle-même et de toutes les vues qui référencent ces éléments. Ceci est l'équivalement de sélectionner les éléments dans l'arborescence des modèles et de choisir "Supprimer".</p>
+    
+    <p>&nbsp;</p>
+
+</body>
+</html>
