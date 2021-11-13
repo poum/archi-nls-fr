@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Points de vue</title>
+<link href="../Styles/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <h1 class="pagebreak">Points de vue</h1>
+
+    <p>La spécification ArchiMate pose que les "Points de vue sont un moyen de se focaliser sur des aspects et des couches particuliers de l'architecture. Ces aspects et couches sont déterminés par les sujets d'intérêt d'une partie prenante avec laquelle la communication prend place. Ce qui doit ou ne doit pas être visible dans un point de vue est de ce fait totalement dépendant de l'argumentation en respect des préoccupations d'une partie prenante."</p>
+    
+    <p>En pratique, un point de vue est un sous-ensemble d'éléments et de relations ciblant une partie prenante. Archi vous permet de définir les points de vue suivants:</p> 
+    
+    <img src="../Images/viewpoints_menu.png" alt="Viewpoints"/>
+    <p class="caption">Points de vue pris en charge</p>
+
+    <p>Quand on crée une nouvelle vue dans Archi, le point de vue par défaut est défini à "Aucun", signifiant que tous les concepts peuvent être ajoutés à la vue. Définir un point de vue pour une vue signifie qu'un sous-ensemble d'éléments est disponible et pouvant être placé sur la vue. Certains autres outils de création ArchiMate vous imposent de définir le point de vue en avance au moment de créerla vue. Malheureusement, ceci signifie que vous ne pouvez changer d'avis, même si vous voulez plus tard changer le point de vue dans la vue. Archi, cependant, implémente des <strong>points de vue dynamiques</strong> de telle sorte que vous pouvez changer le point de vue à tout moment et les éléments qui y deviennent plus permis sont "floutés". Les points de vue dynamiques vous permettent de changer d'avis. Vous n'avez pas à décider a priori ce que le point de vue sera. Vous pouvez expérimenter différents points de vue différent pour la même vue. Et si vous décidez de conserver le point de vue, vous pouvez simplement supprimer et désactiver des éléments de la vue.</p>
+    
+    <br/>
+    
+    <h2>Configurer le point de vue</h2>
+
+    <p>Pour définir le point de vue pour une vue, ouvrir la vue dans l'éditeur de la vue et choisir le point de vue demandé via le menu principal "Vue-&gt;Point de vue" ou en faisant un clic droit sur la zone de dessin de la vue et en le sélectionnant dans le menu contextuel. Vous pouvez également changer le point de vue depuis la fenêtre des <a href="properties_view.html">propriétés</a>.</p>
+
+    <p>Dans l'exemple suivant, nous commençons avec une vue qui a le point de vue par défaut "Aucun":</p>
+    
+    <img src="../Images/viewpoint_none.png" alt="Dynamic Viewpoint"/>
+    <p class="caption">Une vue avec le point de vue "Aucun"</p>
+
+    <p>Notez que tous les éléments des couches ArchiMate (Métier, Application et Technologie) sont affichés. De même, la palette possède tous les éléments disponibles.</p>
+    
+    <p>Si nous changeons maintenant le point de vue en "Infrastructure", alors tous les éléments qui n'appartiennent pas à ce point de vue sont "floutés" dans la vue. Notez également que seuls les éléments autorisés pour le point de vue actuel sont disponibles dans la palette tandis que les autres ne sont pas disponibles:</p> 
+    
+    <img src="../Images/viewpoint_changed.png" alt="Dynamic Viewpoint 2"/>
+    <p class="caption">La même vue avec le point de vue "Technologie"</p>
+
+    <p>Si nous regardons les éléments dans l'arborescence des modèles, nous pouvons voir que les éléments non autorisés pour le point de vue sont également grisés:</p>
+    
+    <img src="../Images/viewpoint_tree.png"/>
+    <p class="caption">Les éléments non autorisés pour le point de vue sont grisés</p>
+
+    <p>Si nous le choisissons, nous pouvons glisser déposer tout élément de l'arborescence des modèles dans la vue mais les éléments résultant dans la vue sont grisés. Ceci signifie que nous pouvons travailler avec le point de vue de la façon que nous le voulons mais il nous est rappelé tout le temps ce que nous pouvons et ne pouvons pas ajouter au point de vue.</p>
+    
+    <p>Si vous n'êtes pas sûr des contraintes d'un point de vue, sélectionnez le puis ouvrez la <a href="hints.html">fenêtre des astuces</a>. Une explication complète est disponible pour le point de vue:</p>
+    
+    <img src="../Images/viewpoint_hint.png"/>
+    <p class="caption">Une astuce pour un point de vue</p>
+    
+    <p>&nbsp;</p>
+
+</body>
+</html>

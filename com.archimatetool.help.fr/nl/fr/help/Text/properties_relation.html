@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Propriétés des relations</title>
+<link href="../Styles/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <h2>Propriétés des relations</h2>
+
+    <p>Sélectionner une relation de modèle dans l'arborescence des modèles ou dans une vue signifie que vous pouvez modifier ou consulter les propriétées suivantes dans la fenêtre des propriétés.</p>
+    
+    <br/>
+    
+    <p class="font12"><strong>L'onglet principal</strong></p>
+    
+    <img src="../Images/properties_relation1.png"/>
+    <p class="caption">Modifier les proprités "Principales" d'une relation ArchiMate</p>
+    
+    <table>
+      <tr valign="top">
+        <td><strong>Nom:</strong></td>
+        <td>Le nom d'une relation. S'il est fourni, il sera affiché à côté de la connexion dans une vue.</td>
+      </tr>
+      <tr valign="top">
+        <td><strong>Documentation:</strong></td>
+        <td>Un emplacement pour saisir de la documentation utilisateur concernant la relation.</td>
+      </tr>
+    </table>
+    
+    <br/>
+    
+    <p class="boxout"><img src="../Images/tip.png" class="tipImage"/>Dans le champ texte "Documentation", les URLs qui commence par "http://" "https://" ou "ftp://" s'affichera sous forme d'un hyperlien. Appuyer sur la touche Ctrl / Command modifiera le curseur en un curseur "main" et vous pourrez ouvrir le lien dans un navigateur.</p>
+    
+    <br/>
+    
+    <p>Le type de relation <strong>Association</strong> possède une propriété supplémentaire:</p>
+    
+    <table>
+      <tr valign="top">
+        <td><strong>Dirigée:</strong></td>
+        <td>Peut être configuré en dirigé ou non dirigé. Configurer ceci modifie également la tête de flèche de la connexion.</td>
+      </tr>
+    </table>
+    
+    <br/>
+    <p>Le type de relation <strong>Accès</strong> possède une propriété supplémentaire:</p>
+    
+    <table>
+      <tr valign="top">
+        <td><strong>Type d'accès:</strong></td>
+        <td>Peut être défini en "Accès", "Lecture", "Écriture" ou "Lecture/Écriture". Configurer ceci peut également modifier les têtes de flèches des connexions.</td>
+      </tr>
+    </table>
+    
+    <br/>
+
+    <p>Le type de relation <strong>Influence</strong> possède une propriété supplémentaire:</p>
+    
+    <table>
+      <tr valign="top">
+        <td><strong>Force:</strong></td>
+        <td>Peut être configuré avec une valeur appropriée telle que "+", "++", "+++", "-", "--", "---".</td>
+      </tr>
+    </table>
+
+    <br/>
+    
+    <p class="font12"><strong>L'onglet Propriétés</strong></p>
+    <p>Pour plus d'informations concernant la création et la gestion des propriétés utilisateur, voir les <a href="properties_user_properties.html">propriétés utilisateur</a>.</p>
+    
+    <br/>
+    
+    <p class="font12"><strong>L'onglet Analyse</strong></p>
+    
+    <img src="../Images/properties_relation2.png"/>
+    <p class="caption">Voir les propriétés d'"Analyse" d'une relation ArchiMate</p>
+    
+    <table>
+      <tr valign="top">
+        <td><strong>Utilisé dans les vues:</strong></td>
+        <td>Un tableau affichant les vues (s'il y en a) dans lesquelles la relation sélectionnée est utilisée (affichée dans un diagramme). Double cliquer sur une entrée du tableau ouvrira la vue et sélectionnera la relation (connexion) dans le diagramme.</td>
+      </tr>
+      <tr valign="top">
+        <td><strong>Relations du modèle:</strong></td>
+        <td>Un tableau affichant les relations (s'il y en a) vers et depuis la relation sélectionnée dans la modélisation. Double cliquer sur une entrée du tableau sélectionnera la relation dans l'arborescence des modèles si elle est ouverte. Note - si la relation n'a pas de relation entrante ou sortante, le tableau sera vide.</td>
+      </tr>
+  </table>
+    
+    <p>&nbsp;</p>
+
+</body>
+</html>
