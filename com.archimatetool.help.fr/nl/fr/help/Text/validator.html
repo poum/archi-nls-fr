@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Le valideur</title>
+<link href="../Styles/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <h1 class="pagebreak">Le valideur</h1>
+
+    <p>Le valideur offre des conseils et des avertissements sur l'intégrité d'une modélisation ArchiMate. Il peut souligner les problèmes suivants:</p>
+    
+    <ul>
+        <li>Vues vides (vues sans objets de diagramme)</li>
+        <li>Relations invalides (possiblement en important depuis un autre format)</li>
+        <li>Éléments imbriqués invalides (imbrication visuelle sans relation ou relation présente qui ne représente pas une imbrication)</li>
+
+        <li>Éléments inutilisés (non référencés dans une vue)</li>
+        <li>Relations inutilisées (non référencées dans une vue)</li>
+        <li>Éléments invalides dans des points de vue (éléments qui n'ont pas leur raison d'être dans un point de vue)</li>
+        <li>Noms d'éléments en doublon pour le même type d'éléments</li>
+    </ul>
+
+    <p>La fenêtre du valideur peut être ouverte depuis le menu principam "Outils", depuis la barre d'outils principale ou depuis le menu principal "Fenêtre".</p>
+    
+    <p>Pour valider une modélisation, assurez-vous que la modélisation est sélectionnée en la choisissant dans l'arborescence des modèles ou en en sélectionnant une dans la vue des modèlisations. Ensuite, vous pouvez soit choisir "Valider la modélisation" dans le menu "Outils", soit faire un clic droit dans l'arborescence des modèles ou dans la fenêtre du Valideur elle-même.</p> 
+    
+    <img src="../Images/validator1.png" alt="image" />
+    <p class="caption">Le valideur affichant des astuces</p>
+
+    <p>Double cliquez sur un problème, ou sélectionner l'élément de menu "Révéler un objet" dans le menu invoqué par clic droit dans la fenêtre du Valideur va révéler l'objet affecté soit dans l'arborescence des modèles, soit dans une vue.</p>
+    
+    <p>Pour afficher un conseil explicatif concernant le problème, assurez-vous que la fenêtre des conseils est ouverte ou sélectionnez l'entrée de menu "Afficher un conseil explicatif" dans le menu invoqué par clic droit.</p> 
+   
+    <p>Une fois que tous les problèmes ont été corrigés dans la modélisation, le valideur va indiquer que tout est OK:</p>
+
+    <img src="../Images/validator2.png" alt="image" />
+    <p class="caption">Le valideur est content</p>
+    
+    <h3>Préférences</h3>
+    <p>Chacune des règles de validation peut être activée ou désactivée dans les <a href="prefs_validator.html">Préférences</a>.</p>
+
+    <p>&nbsp;</p>
+
+</body>
+</html>

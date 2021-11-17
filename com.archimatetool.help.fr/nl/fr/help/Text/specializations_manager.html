@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Gestionnaire des spécialisations</title>
+<link href="../Styles/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <h1 class="pagebreak">Gestionnaire des spécialisations</h1>
+
+    <p>Le gestionnaire des spécialisations vous permet de créer, de modifier et de supprimer des spécialisations des concepts ArchiMate.</p>
+    
+    <h2>Contexte</h2>
+    <p>La spécialisation ArchiMate décrit l'utilisation de la spécialisation d'éléments et de relations:</p>
+
+    <blockquote>
+      <p>"Une spécialisation est un moyen simple et puissant pour définir de nouveaux éléments ou relations en se basant sur ceux qui existent. Les éléments spécialisés héritent des propriétés des éléments généraux ... Une nouvelle notation graphique peut également être introduite pour un nouveau concept spécialisé, mais de préférence avec une ressemblance avec la notation du concept plus générique; i.e. en ajoutant un icone ou un autre marquant graphique, ou en modifiant un icone existant. Un élément ou une relation spécialisé ressemble fortement à un stéréotype tel qu'utilisé en UML. La notation de stéréotype avec guillements anguleux peut également être utilisée pour signaler un concept spécialisé."</p>
+    </blockquote>
+
+    <p>Pour plus d'information, voir les <a href="https://pubs.opengroup.org/architecture/archimate31-doc/chap15.html">les mécanismes de personnalisation du langage</a>.</p>
+
+    <br/>
+
+    <h2>Utiliser le gestionnaire des spécialisations</h2>
+
+    <p>Le gestionnaire des spécialisations est disponible via le menu principal "Outils" et en cliquant sur le bouton "..." à droite de la spécialisation d'un objet dans la <a href="properties_window.html">fenêtre des propriétés</a>.</p>
+    
+    <img src="../Images/specialization_manager.png"/>
+    <p class="caption">Le gestionnaire des spécialisations</p>
+
+    <br/>
+    
+    <h3>Créer une nouvelle spécialisation</h3>
+    <p>Pour créer une nouvelle spécialisation, cliquez sur le bouton "Nouvelle" ou double-cliquez dans le tableau. Fournissez un nom et choisissez le type de concept auquel la spécialisation sera restreinte. Notez que vous ne pouvez pas avoir plus d'une spécialisation avec le même nom et le même type de concept. Si la spécialisation est utilisée dans une modélisation, le nombre d'instances est affiché dans la colonne "Instances".</p>
+
+    <h3>Supprimer une spécialisation</h3>
+    <p>Pour supprimer une ou plusieurs spécialisations, choisissez les dans le tableau et appuyez sur le bouton "supprimer". Tous les concepts qui référencent la spécialisation supprimée ne les référenceront plus.</p>
+
+    <h3>Ajouter ou supprimer une image pour une spécialisation</h3>
+    <p>Les spécialisations d'éléments (sauf les Jonctions) peuvent également être associées à une image qui sera affichée quand l'élément spécialisation est utilisé dans une vue. Choisir une image pour l'objet ou effacer l'image à partir du bouton "Image ..." ou en double cliquant sur la boîte de prévisualisation de l'image. Voir <a href="image_chooser.html">ajouter des images à des objets</a>" pour plus de détails.</p>
+
+    <h3>Appliquer une spécialisation à un concept ArchiMate</h3>
+    <p>Une spécialisation peut être ajoutée à un concept en le sélectionnant dans sa <a href="properties_element.html">fenêtre des propriétés</a>.</p>
+
+    <p>&nbsp;</p>
+
+</body>
+</html>
