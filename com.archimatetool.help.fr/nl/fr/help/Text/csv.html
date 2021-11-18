@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Exporter et importer la modélisation au format CSV</title>
+<link href="../Styles/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <h1 class="pagebreak">Exporter et importer la modélisation au format CSV</h1>
+    
+    <h2>Exporter la modélisation en CSV</h2>
+
+    <p>Vous pouvez exporter les données d'une modélisation au format CSV (comma separated value ou valeurs séparées par une virgule). Les données sont exportées dans trois fichiers distincts - "elements.csv", "relations.csv" et "properties.csv". Tous les objets de données sont identifiés par des identifiants uniques de telle sorte qu'une propriété référencera un élément ou une relation dans les autres fichiers.</p>
+    <p>Cette option est disponible via l'élément de menu "Exporter la modélisation en CSV ..." dans le menu principal "Fichier-&gt;Exporter". Une fois qu'une modélisation est sélectionnée dans l'arborescence des modèles ou dans une vue, cet élément de menu est activée.</p> 
+
+    <img src="../Images/csv-export.png" alt="export-csv"/>
+    <p class="caption">Exporter la modélisation en CSV</p>:24
+    
+    <br/>
+    <p>Le format de champ CSV pour les éléments est - "ID", "Type", "Name" ("Nom"), "Documentation"</p>
+    <p>Le format de champ CSV pour les relations est - "ID", "Type", "Name", "Documentation", "Source", "Target" ("Cible")</p>
+    <p>Le format de champ CSV pour les propriétés est - "ID", "Key" ("Clef"), "Value" ("Valeur")</p>
+    
+    <h3>Options d'export</h3>
+    <p><strong>Répertoire de sortie</strong><br/>
+    Choisir le dossier pour les fichiers de sortie.</p>
+    
+    <p><strong>Délimiteur</strong><br/>
+    Choisir le caractère délimitant les champs CSV - virgule, point virgule ou tabulation.</p>
+
+    <p><strong>Préfixe de fichier</strong><br/>
+    Fournir un préfixe facultatif à ajouter les noms de fichier. Par exemple, "MaModélisation-" changera les noms de fichier en "MaModélisation-elements.csv", "MaModélisation-relations.csv" et "MaModélisation-properties.csv".</p>
+
+    <p><strong>Encodage des fichiers</strong><br/>
+    Choisir l'encodage de fichier à utiliser - ANSI, UTF-8 ou UTF-8 BOM. Certains programmes préfère l'un ou l'autre encodage de fichiers. Par exemple, MS Excel préfère l'encodage "UTF-8 BOM" si des caractères unicode sont présents dans le fichier CSV.</p>
+
+    <p><strong>Supprimer les caractères de saut de ligne</strong><br/>
+    Si sélectionnée, cette option supprimera tous les caractères de saut de ligne des textes multi lignes tels que la documentation.</p>
+
+    <p><strong>Compatible Excel</strong><br/>
+    Si sélectionnée, cette option entoureta le texte commençant avec un 0 ou un espace avec des guillements de façon à ce que les données soient importées correctement dans Excel. De même, tout champ texte qui commence par un caractère "=", "+", "-" ou "@" sera préfixé par un espace de façon à ce que Excel ne l'interprête pas comme une formule.</p>
+
+    <br/>
+    
+    <h2>Importer des données CSV dans une modélisation</h2>
+
+    <p>Vous pouvez également importer des données CSV dans une modélisation existante. Les fichiers CSV doivent être dans le même format que celui décrit précédemment. Les IDs des éléments et des relations sont facultatifs s'ils sont référencés par d'autres concepts ou propriétés. S'il est fourni, un ID devra alors être unique au sein du fichier, et utiliser des caractères alphanumériques, par exemple - "id1", "8fe456d", "acteur3". Si un ID n'est pas fourni, un champ vide "" devra être présent. Dans ce cas, un ID sera généré lors de l'import.</p>
+    
+    <p>Quand des données CSV sont importées dans une modélisation existante, vous pouvez fournir un ou les trois fichiers (elements, relations, properties). Habituellement, vous fournirez les trois fichiers. Le format de ces fichiers est le suivant:</p> 
+
+    <p>"xxx-elements.csv"<br/>
+    "xxx-relations.csv"<br/>
+    "xxx-properties.csv"</p>
+
+    <p>Le préfixe ("xxx") est optionnel mais doit être le même pour les trois fichiers s'il est utilisé. Les trois noms de fichiers doivent correspondre - par exemple: "monnom-elements.csv", "monnom-relations.csv" et "monnom-properties.csv". A minima, le nom de fichier doit contenir l'extention ".csv" et son nom doit se terminer par "elements", "relations" ou "properties".</p>
+   
+    <p>Le meilleur moyen de comprendre le format requis est d'exporter une modélisation existante au format CSV puis d'ouvrir les fichiers obtenus dans un éditeur de texte ou une application de tableur</p>
+   
+    <p>Lors de l'import d'un ou de fichiers CSV dans Archi, vous pouvez choisir n'importe lequel des fichiers CSV via la boîte de dialogue d'import. S'il y a des fichiers correspondants "*.csv", alors ces fichiers seront automatiquement importés en même temps.</p>
+
+    <p>Il est également possible de fusionner/mettre à jour des données CSV importées dans une modélisation existante. Si un concept de modélisation existe déjà comme signalé par son ID, et que la ligne CSV contient des données différentes de celles de la modélisation, il est mis à jour. Par exemple, un Acteur métier ayant l'id "9240f5bf", appelé "AM1" et aucune documentation peut être mis à jour par une ligne en entrée telle que la suivante:</p>
+    
+    <p style="font-style:italic;">"ID","Type","Name","Documentation"<br/>
+       "9240f5bf","ActeurMétier","Nouveau Nom","Documentation additionnelle" 
+    </p>
+
+    <p>Vous pouvez importer juste un ou deux fichiers CSV dans une modélisation existante. Si vous n'importez qu'un fichier "elements.csv", alors seuls les éléments seront importés. Si vous importez ensuite un fichier "relations.csv" qui utilise des IDs correspondants de concepts, vous pouvez n'importer que les relations. La même chose est vraie pour le fichier "properties.csv".</p>
+
+    <p>Si vous créez manuellement des fichiers CSV, assurez-vous de les enregistrer au format UTF-8 pour préserver tous les caractères spéciaux.</p>
+   
+    <p>Note - il est actuellement impossible d'importer et d'exporter des informations de diagramme des vues au format CSV.</p>
+    
+    <p>&nbsp;</p>
+
+</body>
+</html>
