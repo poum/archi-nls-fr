@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Importer une autre modélisation dans la modélisation courante</title>
+<link href="../Styles/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <h1 class="pagebreak">Importer une autre modélisation dans la modélisation courante</h1>
+
+    <p>Il est possible d'importer et de fusionner une modélisation Archi dans la modélisation actuellement sélectionnée. Vous pouvez ensuite maintenir la modélisation importée comme modèlisation de référence que vous pouvez mettre à jour séparemment et réimporter quand c'est nécessaire.</p>
+
+    <p>Certaines choses à prendre en considération au moment d'importer une autre modélisation:</p>
+
+    <ul>
+      <li>Les objets de modélisation sont référencés de manière unique par leur type et leur identifiant. Quand on importe une modélisation, ils sont utilisés pour faire correspondre les objets importés avec les objets cibles.</li>
+      <li>Toutes les propriétés utilisateurs pour un objet sont remplacées au moment de leur importation, il n'y a rien à fusionner à ce niveau.</li>
+      <li>Certaines modifications dans la modélisation importée peut affecter les connexions dans les vues si les relations sont modifiées ou supprimées. Elles sont signalées dans la boîte de dialogue d'état après l'importation.</li>
+      <li>Les objets cibles et les dossiers existant ne seront pas supprimés même si ceux-ci sont supprimés dans la modélisation importée.</li>
+    </ul>
+
+    <h2>Importer une autre modélisation Archi</h2>
+
+    <p>Pour importer une autre modélisation Archi dans la modélisation actuellement sélectionnée, choisir "Importer une modélisation Archi dans la modélisation actuellement sélectionnée" depuis le menu principal "Fichier". La boîte de dialogue apparaîtra:</p>
+    
+    <img src="../Images/importmodel-wizard.png" alt="import-model"/>
+    <p class="caption">Importer une autre modélisation</p>
+
+    <h3>Options d'import</h3>
+
+    <p><strong>Mettre à jour les objets et dossiers existant</strong><br/>
+    Si cette option est sélectionnée, alors tous les objets et les dossiers cibles existant seront mis à jour lors de l'import.</p>
+    
+    <p><strong>Mettre à jour les informations et les dossiers de premier niveau de la modélisation</strong><br/>
+    Si cette option est sélectionnée, alors s'il y a des changements dans le nœud de la modélisation (Nom, Documentation, Propriétés), ceux-ci seront mis à jour. S'il y a des changements dans des dossiers de premier niveau (Documentation, Propriétés), ceux-ci seront également mis à jour.</p>
+
+    <p><strong>Afficher la boîte de dialogue d'état après l'import</strong><br/>
+    Si cette option est sélectionnée, alors une boîte de dialogue d'état est affichée après l'importation d'une modélisation. Ceci affichera la liste de ce qui a été mis à jour ou modifié.</p>
+
+    <p>&nbsp;</p>
+
+</body>
+</html>
