@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Rapports Jasper</title>
+<link href="../Styles/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <h1 class="pagebreak">Rapports Jasper</h1>
+    
+    <br/>
+    
+    <p><a href="https://www.jaspersoft.com/jasperreports" target="_blank">Jasper Reports</a> est le moteur Java de génération de rapport le plus populaire au monde. Il combine des sources de données et produit des documents parfaits au pixel près qui peuvent être consultés, imprimés ou exportés dans nombre de formats de documents avec son puissant outil de génération de rapport. Archi peut exporter des modélisations dans différents formats en utilisant les gabarits de Jasper Reports.</p>
+
+    <p>Cette option est disponible en utilisant l'élément de menu "Rapport-&gt;Jasper ..." du menu principal "Fichier". Une fois que la modélisation est sélectionnée dans l'arborescence des modèles ou dans une vue, cet élément de menu est activé. Il faut alors fournir les détails dans la page de l'assistant suivante:</p>
+    
+    <img src="../Images/jasper_wizard1.png"/>
+    <p class="caption">Page 1 de l'assistant Jasper Reports</p>
+      
+    <br/>
+    
+   <p>Puis dans la page suivante de l'assistant, choisissez le gabarit de rapport que vous préférez ainsi que la langue si vous avez fourni des chaînes de caractères de traduction pour le gabarit du rapport:</p>
+    <img src="../Images/jasper_wizard2.png"/>
+    <p class="caption">Page 2 de l'assistant Jasper Reports</p>
+    
+    <br/>
+    
+    <h2>Rapport personnalisable</h2>
+
+    <p>Si vous choisissez le gabarit "Rapport personnalisable" au moment de l'export, vous pourrez alors régler différentes propriétés pour l'agencement du rapport si vous le basez sur le gabarit de modélisation "Rapport personnalisable" au moment de créer une nouvelle modélisation. Voir <a href="templates_new_model.html">"Créer une nouvelle modélisation à partir d'un gabarit</a> pour davantage de détails</p>
+   <p>En configurant certaines propriétés dans la modélisation qui s'appuie sur le gabarit de modélisation "Rapport personnalisable", vous pouvez régler finement le résultat en sortie. Quand vous créez une nouvelle modélisation basée sur le gabarit de modélisation "Rapport personnalisable", il existe une vue appelée "_LISEZ MOI_" qui liste ces propriétés.</p>
+    
+    <img src="../Images/custom_report_properties.png"/>
+    <p class="caption">Propriétés de personnalisation du rapport</p>
+    
+    <br/>
+
+    <h2>Gabarits de rapport utilisateur</h2>
+
+    <p>Si vous souhaitez vos propres gabarits de rapports, vous pouvez les placer dans le dossier appelé "jasper-reports" dans le dossier de préférence de l'application. Vous pouvez modifier l'emplacement de ce dossier dans les <a href="prefs_jasper.html">Préférences</a>. Alternativement, vous pouvez manuellement sélectionner un fichier de gabarit ("main.jrxml") depuis l'option combinée "Choisir ..."</p>
+    
+    <p>Une structure de dossiers d'exemple pour un rapport personnalisé:</p>
+<pre>
+C:\Users\Bagpuss\Application Data\Archi\jasper-reports
+                                                 |------My Custom Report
+                                                                 |------main.jrxml
+                                                                 |------style.jrxt
+                                                                 |------other files...
+
+</pre>
+<p>Pour davantage d'information sur la création de Rapports Jasper personnalisés, merci de vous référer à la section développement de ce site web "Archi"</p>
+
+    <br/>
+    <h2>Résultat</h2>
+
+    <p>Ce qui suit est un exemple de rapport au format PDF</p>
+
+    <img src="../Images/jasper_pdf.png"/>
+    <p class="caption">Partie du rapport Jasper généré au format PDF</p>
+    
+    <p>&nbsp;</p>
+
+</body>
+</html>
