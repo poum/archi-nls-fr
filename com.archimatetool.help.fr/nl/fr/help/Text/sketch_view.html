@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>La vue Esquisse</title>
+<link href="../Styles/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <h1 class="pagebreak">La vue Esquisse</h1>
+
+    <p>La vue Esquisse est une fonctionnalité expérimentale d'Archi. L'idée derrière la vue Esquisse est inspirée par le document de spécification ArchiMate définissant un "point de vue introductif":</p>
+    
+    <blockquote>
+      <p> "Le point de vue introductif forme un sous-ensemble du langage ArchiMate complet utilisant une notation simplifiée. Il est typiquement utilisé au début d'une trajectoire de conception, quand tout n'a pas besoin d'être détaillé, ou pour expliquer l'essence d'une modélisation d'architecture à des non architectes, ce qui nécessite une notation plus simple. Une autre utilisation de ce point de vue basique, moins formel, est qu'il essaie d'éviter l'impression que la conception architecturale est déjà fixée, une idée qui peut facilement venir quand on utilise une visualisation plus formelle, hautement structureux ou détaillée. Nous utilisons une notation simplifiée pour les concepts et pour les relations. Toutes les relations à l'exception de "déclenchement" et "réalisation" sont signalées pour des lignes simples; "réalisation" possède une flèche dans la direction du service réalisé; "déclenchement" est également représenté par une flèche." - <em>Spécification ArchiMate 1.0 p72</em></p>
+    </blockquote>
+   
+    <p>C'est d'une certaine manière d'une certaine manière semblable à la description de Marc Lankhorst des processus de modélisation en utilisant des techniques de conversation qui visent à capturer l'essence d'une modélisation:</p>
+    
+    <blockquote>
+      <p>"Dans le développement d'architecture, nous trouvons un nombre de techniques de conversation quand cela concerne la communication de modélisations architecturales:<br/>
+        <br/>
+        - <strong>Session sur papier brun:</strong> Les sessions de groupe structurées de réflexion (allant jusqu'à environ 15 personnes) dans lesquelles des éléments (mots clefs ou courtes phrases) sont suscités à des individus dans le groupe en réponse à une question telle que: 'Quelles sont les problèmes de fonctionnalités clefs dans notre architecture des technologies de l'information actuelle ?'. Typiquement, chaque élément est écrit individuellement sur une petite note adhésive ('Post-It'). Les éléments sont ensuite collationnés sur une feuille de papier (traditionnellement de type de papier brun) et, au moyen d'un processus de groupe ouvert et créatif, structurés et catégorisés. Ceci peut impliquer ajouter, supprimer, fusionner ou changer des éléments. Habituellement, un médiateur ou un facilitateur." - <em>Marc Lankhorts et al. "L'architecture d'entreprise en action", Seconde édition, p82.</em></p>
+        - <strong>Brown-paper session:</strong> Structured brainstorm-like group session (up to about 15 people) in which items (keywords or short phrases) are elicited from the individuals in the group in  answer to a question such as: 'What are the key functionality issues in our  current IT architecture?' Typically, every individual item is written on a small adhesive note ('Post-It'). The items are then collected on a sheet of paper (traditionally of the cheap brown kind) and, by means of an open and creative group process, structured and categorised. This may involve adding, deleting, merging, or  changing items. Usually, a mediator or facilitator is involved." - <em>Marc Lankhorst et al. "Enterprise Architecture at  Work", Second Edition, p.82</em></p>
+    </blockquote>
+   
+    <p>Dans Archi, il est possible de créer une "Vue esquisse". Pour ajouter une nouvelle vue Esquisse dans la modélisation, faites un clic droit sur le dossier "Vues" de l'arborescence des modèles puis choisissez "Nouveau-&gt;Vue esquisse" dans le menu contextuel:</p>
+    
+    <img src="../Images/new-sketch.png"/>
+    <p class="caption">Ajouter une nouvelle vue "Esquisse"</p>
+   
+    <p>Une fois que la vue Esquisse a été ajoutée à la modélisation, elle peut être ouverte à partir de l'arborescence en double cliquant sur elle. On peut ajouter ou ouvrir en même temps n'importe quel nombre de vues à une modélisation. Les vues sont rangées dans des onglets dans la zone principale de la fenêtre de l'application.</p>
+    
+    <img src="../Images/sketch1.png"/>
+    <p class="caption">Un exemple de vue Esquisse</p>
+   
+    <p>Vous pouvez ajouter de nouvelles "Notes adhésives" (Post-Its) à la vue, un symbole "Acteur" et trois types de connexions. Il n'y a pas de règles concernant ce que les relations ou les notes adhésives signifient. Tous les objets peuvent être modifiés dans la fenêtre des propriétés. Vous êtes libres de capturer une esquisse de votre modélisation puis les convertir plus tard dans une modélisation ou une vue ArchiMate pleinement contraintes.</p>
+   
+    <p>Double cliquer sur une note adhésive ouvre la <a href="properties_window.html">fenêtre des propriétés</a>, cliquer sur une note adhésive vous permet de modifier directement le texte d'une note adhésive.</p>
+   
+    <p>Il est possible de définir l'image de fond par défaut dans les <a href="prefs_diagram.html">Préférences</a> si vous le souhaitez et de définir l'image de fond pour chaque vue d'esquisse dans l'onglet "Apparence" de la <a href="properties_window.html">fenêtre des propriétés</a>:</p>
+    
+    <img src="../Images/properties_sketch_appearance.png"/>
+    <p class="caption">Options d'image de fond de la vue Esquisse</p>
+   
+    <p>Les versions ultérieures de cette fonctionnalité devraient vous permettre de:</p>
+    
+    <ul type="disc">
+      <li>Transformer l'esquisse en une vue ArchiMate à part entière au moyen de paramètres et de requêtes</li>
+      <li>Enregistrer les conversations de modélisation dans Archi pour mieux capturer l'objet de l'esquisse</li>
+    </ul>
+    
+    <p>&nbsp;</p>
+
+</body>
+</html>
