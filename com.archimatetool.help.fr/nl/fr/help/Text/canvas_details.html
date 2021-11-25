@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Boîte à outils de modélisation de canevas - Aller dans les détails</title>
+<link href="../Styles/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <h2>Aller dans les détails</h2>
+    <p>Les principaux composants et les concepts qui constituent un canevas sont les blocs, les notes adhésives, les images, les connexions, les conseils et le verrouillage. Un gabarit de canevas comporte un certain nombre de blocs (verrouillés) et des images sur lesquelles l'utilisateur peut ajouter des notes adhésives, des images, des connexions et des blocs complémentaires si nécessaire. Les sections suivantes chacun de ces concepts en détail en commençant par une description de la palette du canevas et un exemple de construction d'un canevas imaginaire.</p>
+    
+    <p>&nbsp;</p>
+    
+    <h3>La palette du canevas</h3>
+    <p>Quand on travaille avec un canevas, la palette vous présente les outils dont vous avez besoin pour créer ces objets.</p>
+    
+    <img src="../Images/canvas_palette.png" alt="canevas" />
+    <p class="caption">La palette du canevas</p>
+   
+    <p>Choisissez un outil dans la palette et tirez le sur le canevas. Les carrés colorés représentent des "notes adhésives". Notez que vous n'êtes pas restreint aux couleurs fournies puisque vous pouvez modifier la couleur de la note adhésive dans la <a href="properties_canvas_sticky.html">fenêtre des propriétés</a>. De même avec les connexions fournies, vous pouvez modifier le style de ligne et de flèche d'une connexion dans sa <a href="properties_canvas_connection.html">fenêtre des propriétés</a>.</p>
+    
+    <p>&nbsp;</p>
+    
+    <h3>Construire un nouveau canevas - un exemple</h3>
+    <p>Travaillons via le processus de construction de votre propre Canevas basé sur les concepts associés au passé, au présent et au futur.</p>
+    <p>En supposant que vous avez une modélisation sélectionnée dans l'arborescence des modèles, suivez ces étapes:</p>
+    
+    <ol>
+      <li>Faites un clic droit sur le dossier "vues" de votre modèlisation dans l'arborescence des modèles et choisissez "Nouveau-&gt;Canevas vierge":<br/>
+        <br/>
+        <img src="../Images/canvas_new_blank.png" alt="canevas" /><br/>
+        <br/>
+      </li>
+      <li>La vue de canevas vierge va s'ouvrir automatiquement. Vous pouvez la renommer à ce point dans l'arborescence des modèles si vous le souhaitez.</li>
+      <li>À partir de la palette, choisissez l'outil bloc et tirez un grand bloc rectangulaire sur le canevas. Modifiez son contenu textuel en cliquant sur lui et en le modifiant en "Passé":<br/>
+        <br/>
+        <img src="../Images/canvas_example1.png" alt="canvas" /><br/>
+        <br/>
+      </li>
+      <li>Créer encore deux blocs appelés "Présent" et "Future" en les ajoutant au canevas de façon à ce qu'ils soient alignés comme suit:<br/>
+        <br/>
+        <img src="../Images/canvas_example2.png" alt="canevas" /><br/>
+        <br/>
+      </li>
+      <li>Maintenant, ajoutez quelques icones à ces blocs pour les rendre visuellement plus attractives. Double cliquez sur le premier bloc pour ouvrir la fenêtre des propriétés. Dans la fenêtre des propriétés, choisissez l'onglet "Image". Puis choisissez la boîte déroulante "Choisir ..." et l'élément "Définir l'image ...":<br/>
+        <br/>
+        <img src="../Images/canvas_example3.png" alt="canevas" /><br/>
+        <br/>
+        Quand la fenêtre de dialogue de gestion des images "Mes images" s'ouvre, choisissez l'option "Ouvrir depuis le fichier ..." et choisissez une image appropriée dans le système de fichier de votre ordinateur. Faites de même pour les autres blocs.<br/>
+        <br/>
+      </li>
+      <li>Voici à quoi ça ressemble à ce stade avec les images que vous avez choisis pour les trois blocs:<br/>
+        <br/>
+        <img src="../Images/canvas_example4.png" alt="canevas" /><br/>
+        <br/>
+      </li>
+      <li>Maintenant que nous avons construit nos trois blocs principaux, nous pourrions saisir cette opportunité de modifier leur couleur de fond, la police de caractères et la position des textes dans la fenêtre des propriétés. Mais pour le moment, ajoutons une image sous les blocs. Depuis la palette, sélectionnez l'outil Image et tirez un emplacement Image rectangulaire sur le canevas juste sous les blocs. Double cliquez sur le conteneur d'image pour ouvrir la fenêtre des propriétés. Dans la fenêtre des propriétés, sur l'onglet "Principal", choisissez la boîte déroulante "Choisir ..." et configurer l'élément "Définir les images ...", comme vous l'avez fait précédemment pour un bloc, et choisissez une image appropriée depuis le système de fichiers de votre ordinateur. Puis depuis l'onglet "Apparence", configurez la bordure à "Aucune". Le canevas ressemble maintenant à ce qui suit:<br/>
+        <br/>
+        <img src="../Images/canvas_example5.png" alt="canevas" /><br/>
+        <br/>
+      </li>
+    </ol>
+    
+    <p><strong>Ajouter des conseils et un verrouillage</strong></p>
+
+    <p>Pour la touche finale, ajoutez quelques conseils aux blocs puis verrouillons les de façon à pouvoir réutiliser le canevas comme un gabarit. Pour voulons-nous ajouter des conseils aux blocs ? Et bien, comme avec les autres objets dans les modélisations Archi c'est extrêmement utile pour fournir une rubrique qui suggère à l'utilisateur final l'intention de l'objet et comment il peut être utilisé dans la modélisation. Ajoutons les conseils:</p>
+    
+    <ol>
+      <li>Assurons nous d'abord que la <a href="hints.html">fenêtre des conseils</a> est ouverte. Vous pouvez l'ouvrir depuis le menu principalm "Fenêtre".</li>
+      <li>Double cliquez sur le premier bloc (le bloc "Passé") de façon à ouvrir la fenêtre des propriétés.<li>
+          <li>Dans le fenêtre des propriétés, choisissez l'onglet "Conseil".</li>
+          <li>Saisissez "Passé" comme titre de conseil et un peu de texte pour le contenu du conseil. Notez que vous pouvez utiliser du HTML pour enrichir votre contenu textuel. Voici à quoi ceci ressemble maintenant:<br/>
+        <br/>
+      <img src="../Images/canvas_example6.png" alt="canevas" /><br/>
+      <br/>
+      </li>
+      <li>Ajoutez des conseils pour les autres blocs.</li>
+      <li>Verrouillons maintenant tous ces objets de façon à ce que nous puissions utiliser le canevas. Choisissez chaque bloc et son image à leur tour. Dans la fenêtre des propriétés, cochez la boîte "verrouillé":<br/>
+        <br/>
+        <img src="../Images/canvas_example7.png" alt="canevas" /><br/>
+      </li>
+    </ol>
+    
+    <p><br/> 
+    Maintenant que nous avons créé les blocs, ajouté une image, fourni les conseils et verrouillé les objets, nous pouvons enregistrer le tout en tant que gabarit de canevas puis créons de nouvelles instances du canevas à partir du gabarit. Voir les sections "<a href="canvas_save_as_template.html">Enregistrer un canevas comme ganarit</a>" et 
+    "<a href="canvas_new_from_template.html">Créer un nouveau canevas à partir d'un gabarit</a>" pour faire ceci.</p>
+    <p>Créer une nouvelle instance d'un canevas à partir du gabarit signifie que nous pouvons maintenant commencer à l'utiliser pour de vrai:</p>
+    <img src="../Images/canvas_example8.png" alt="canevas" />
+    <p class="caption">Notre canevas imaginaire</p>
+
+    <p>Pour plus d'idées, regardez comment sont construits les gabarits de canevas embarqués pour plus d'exemple. Voir la section <a href="canvas_new_from_template.html">Créer un nouveau canevas à partir d'un gabarit</a>".</p>
+    
+    <p>&nbsp;</p>
+    
+    <p class="boxout"><img src="../Images/tip.png" class="tipImage" alt="astuce"/><strong>Archi utilise un format de fichier différent "*.archimate"i quand on ajoute des canevas qui contiennent des images.</strong><br/>Normalement, Archi enregistre les fichiers "*.archimate" sous forme de fichiers au format en pure texte XML. Cependant, quand des images sont utilisées dans un canevas, le format de fichier utilisé est un fichier archive binaire (format zip) qui contient à la fois un fichier XML et les fichiers images. Ceci pour conserver tous les fichiers liés ensembles pour s'assurer que vous n'avez pas à vous soucier à gérer les fichiers images.</p>
+
+    <p>&nbsp;</p>
+
+</body>
+</html>
