@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Préférences des connexions</title>
+<link href="../Styles/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<h1>Préférences des connexions</h1>
+	
+	<br/>
+
+	<h2>Connexions</h2>
+	
+	<br/>
+	
+	<h3>Connecteur magique</h3>
+	<p><strong>Afficher les éléments d'abord (utiliser la touche Ctrl/Command pour échanger)</strong><br/>
+  Quand on clique avec le connecteur magique sur un canevas de vue vide, affiche d'abord les éléments puis les connexions dans les menus surgissants. Maintenir la touche Ctrl/Commande en même temps inversera ce comportement.</p>
+
+	<p><strong>Afficher les connexions d'abord (utiliser la touche Ctrl/Command pour échanger)</strong><br/>
+  Quand on clique avec le connecteur magique sur un canevas de vue vide, affiche les connexions d'abord puis les éléments dans les menus surgissants. Maintenir la touche Ctrl/Commande en même temps inversera ce comportement.</p>
+	
+	<br/>
+	
+	<h2>Dessin</h2>
+    
+    <p>
+        <strong>Utiliser l'anti crénelage sur les connexions</strong>
+        <br/>sur les systèmes d'exploitation Windows et Linux, s'assure que les connexions sont dessinées de manière plus douce.
+    </p>
+	
+	<p id="useorthogonalconnectionanchors"><strong>Utiliser des ancres de connexion orthogonales</strong><br/>
+  Si ceci est coché, une nouvelle méthode est utilisée pour calculer le point d'ancrage d'une connexion (la position où une connexion se connecte à une figure). Par défaut (option non cochée), le point d'ancrage est calculé comme l'intersection du bord de la figure et de la connexion visant le centre de la figure. Avec cette option, le point d'ancrage est calculé pour que la connexion soit soit verticale, soit horizontale (si ce n'est pas possible, il connecte à l'un des coins de la figyre). Il est possible de déplacer ce point d'ancrage simplement en déplaçant la figure ou en créant un point d'inflexion dans la connexion et en le déplaçant.</p>
+
+  <p>Par exemple, si l'option n'est pas cochée, les connexions apparaissent comme suit:</p>
+	<img src="../Images/orthogonal1.png" alt="Orthogonal 1"/>
+	
+	<br/>
+
+  <p>Si l'option est cochée, les connexions apparaissent comme suit:</p>
+	
+	<img src="../Images/orthogonal2.png" alt="Orthogonal 2"/>
+	
+	<br/>
+	
+	<p>
+        <strong>Utiliser des lignes courbes</strong>
+        <br/>Si ceci est activé, les connexions sont affichées avec des courbes aux points d'inflexion.
+    </p>
+	
+	<p>
+        <strong>Utiliser des sauts de ligne pour les relations qui se croisent</strong>
+        <br/>Si ceci est activé, une courbe de saut est affichée quand une connexion en croise yne autre.
+    </p>
+
+	<p>
+        <strong>Arrière plan d'étiquette</strong>
+        <br/>Fixe la stratégie pour dessiner les arrières plans des étiquettes de connexion. Ceci peut être soit "Transparent", "Opaque" ou "Coupé".
+    </p>
+
+	<br/>
+
+	<h2>Générales</h2>
+    
+    <p>
+        <strong>Afficher un message d'avertissement lorsqu'un reconnexion affecte d'autres vues</strong>
+        <br/>Lorsque une reconnexion est effectuée entre des éléments ArchiMate dans une vue dont les éléments et les connexions peuvent être présents dans une ou plusieurs autres vues. La reconnexion affectera ces vues et cet avertissement alerte l'utilisateur sur ce point et que l'action ne pourra pas être annulée.
+	</p>
+	
+	<br/>
+	
+	<h2>ARM</h2>
+
+	<h3>Gestion automatique des relations</h3>
+  <p>Pour plus d'information, voir <a href="view_container_nested.html">Éléments conteneurs et relations des éléments imbriqués</a>.</p>
+	
+	<p><strong>Activer les connexions implicites dans les vues pour les éléments imbriqués</strong><br/>
+  Si ceci est activé, alors les éléments imbriqués parents/enfants sont considérés comme ayant une connexion implicite dans une vue représentant une relation entre les éléments dans la modélisation.</p>
+
+	<p><strong>Offrir de créer une nouvelle relation quand on crée un nouvel élément depuis la palette</strong><br/>
+  Si ceci est activé alors quand un nouvel élément est ajouté à partir de la palette sur un élément parent dans la vue, une boîte de dialogue apparaît pour offrir de créer une nouvelle relation entre les éléments parent et enfant.</p>
+
+	<p><strong>Offrir de créer une nouvelle relation quand on ajoute un élément depuis l'arborescence des modèles</strong><br/>
+  Si ceci est activé, alors quand un nouvel élément est ajouté à partir de l'arborescence des modèles sur un élément parent dans la vue, une boîte de dialogue apparait offrant de créer une nouvelle relation entre les éléments parent et enfant si n'en existe pas déjà une.</p>
+
+	<p><strong>Offrir de créer une nouvelle relation quand on déplace un élément vers un nouvel élément parent</strong><br/>
+  Si ceci est activé, alors quand un élément dans une vue est tiré sur un élément parent dans la vue, une boîte de dialogue apparaît pour offrir de créer une nouvelle relation entre les éléments parent et enfant s'il n'en existe pas déjà une.</p>
+
+	<p><strong>Types de relations proposées quand on crée de nouvelles relations</strong><br/>
+  Choisissez les types de relations qui seront proposées quand de nouvelles connexions implicites sont créées entre des éléments parent et enfant dans une vue.</p>
+
+	<p><strong>Inverser les types de relations proposées quand on crée de nouvelles relations</strong><br/>
+  Choisissez les types de relations qui seront proposées quand de nouvelles connexions implicites sont créées entre les éléments enfant et parent dans une vue. Ce sont des impbrications "inversées".</p>
+
+	<p><strong>Types de relation à cacher quand des éléments sont imbriqués</strong><br/>
+  Choisir les types de connexion des relations qui seront cachés dans une vue quand il y a des éléments parent et enfant imbriqués.</p>
+
+	<p>&nbsp;</p>
+
+</body>
+</html>
