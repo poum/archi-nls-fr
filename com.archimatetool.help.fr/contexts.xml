@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<?NLS TYPE="org.eclipse.help.contexts"?> 
+<contexts>
+    
+    <context id="treeModelViewHelp" title="The Model Tree">
+        <description>L'arborescence des modèles affiche tous les modèles ArchiMate.</description>
+        <topic label="L'arborescence des modèles" href="help/Text/model_tree.html"/>
+    </context>
+    <context id="outlineViewHelp" title="La fenêtre panorama">
+       <description>La fenêtre Panorama agit comme une vue miniature sur la vue de diagramme sélectionnée de façon à faciliter la navigation si le diagramme est trop grand pour tenir dans la fenêtre.</description>
+       <topic href="help/Text/outline.html" label="The Outline Window"/>
+    </context>
+    <context id="navigatorViewHelp" title="La fenêtre de navigation">
+       <description>La fenêtre de navigation affiche l'élément de modélisation actuellement sélectionné et toutes ses relations avec d'autres élements.</description>
+       <topic href="help/Text/navigator.html" label="La fenêtre de navigation"/>
+    </context>
+    <context id="zestViewHelp" title="La fenêtre du visualiseur">
+       <description>La fenêtre du visualiseur affiche l'élément de modélisation actuellement sélectionné et toutes ses relations avec d'autres éléments dans un agencement en diagramme.</description>
+       <topic href="help/Text/visualiser.html" label="La fenêtre du visualiseur"/>
+    </context>
+    <context id="hintsViewHelp" title="La fenêtre des conseils">
+       <description>La fenêtre des conseils affiche un conseil pour l'élément sélectionné ou l'entrée de la palette. Il peut être utile pour fournir des informations basiques concernant le but des éléments et des relations dans une modélisation.</description>
+       <topic href="help/Text/hints.html" label="La fenêtre des conseils"/>
+    </context>
+    <context id="canvasEditorHelp" title="Éditeur de canevas">
+       <description>Créer des canevas avec la boîte à outils de modélisation du canevas</description>
+       <topic href="help/Text/canvas.html" label="Boîte à outils de modélisation du canevas"/>
+    </context>
+    <context id="validatorViewHelp" title="Le valideur">
+       <description>Le valideur fournit des conseils et des astuces pour améliorer votre modélisation.</description>
+       <topic href="help/Text/validator.html" label="Le valideur"/>
+    </context>
+    <context id="diagramEditorHelp" title="Vue de diagramme">
+       <description>Les éléments et les relations qui constituent une modélisation ArchiMate tels que représentés dans l'arborescence des modèles peuvent être agencés dans une ou plusieurs "Vues" ou diagrammes visuels.</description>
+       <topic href="help/Text/views.html" label="Vues"/>
+       <topic href="help/Text/viewpoints.html" label="Points de vue"/>
+    </context>
+    <context id="sketchEditorHelp" title="Vue esquisse">
+       <description>La vue esquisse offre un moyen rapide de capturer une modélisation.</description>
+       <topic href="help/Text/sketch_view.html" label="La vue esquisse"/>
+    </context>
+    <context id="elementPropertySection" title="Propriétés des éléments">
+       <description>Modifier les propriétés des éléments.</description>
+       <topic href="help/Text/properties_element.html" label="Propriétés des éléments"/>
+       <topic href="help/Text/properties_element_appearance.html" label="Propriétés d'apparence des éléments"/>
+       <topic href="help/Text/properties_relation.html" label="Propriétés des relations"/>
+       <topic href="help/Text/properties_relation_appearance.html" label="Propriétés d'apparence des connexions des relations"/>
+       <topic href="help/Text/properties_folder.html" label="Propriétés des dossiers"/>
+       <topic href="help/Text/properties_group.html" label="Propriétés des groupes"/>
+       <topic href="help/Text/properties_note.html" label="Propriétés des notes"/>
+       <topic href="help/Text/properties_canvas_image.html" label="Propriétés des images"/>
+       <topic href="help/Text/properties_canvas_block.html" label="Propriétés des blocs"/>
+       <topic href="help/Text/properties_canvas_sticky.html" label="Propriétés des éléments adhésifs"/>
+       <topic href="help/Text/properties_canvas_connection.html" label="Propriétés des connexions"/>
+    </context>
+    <context id="labelPropertySection" title="Expression des étiquettes">
+       <description>Modifier les expressions des étiquettes.</description>
+       <topic href="https://github.com/archimatetool/archi/wiki/Label-Expressions" label="Expressions des étiquettes"/>
+    </context>
+    <context id="folderSection" title="Propriétés des dossiers">
+       <description>Modifier les propriétés des dossiers.</description>
+       <topic href="help/Text/properties_folder.html" label="Propriétés des dossiers"/>
+    </context>
+    <context id="diagramModelSection" title="Propriétés des vues">
+       <description>Modifier les propriétés des vues.</description>
+       <topic href="help/Text/properties_view.html" label="Propriétés des vues"/>
+    </context>
+    <context id="archimateModelSection" title="Propriétés de la modélisation">
+       <description>Modifier les propriétés de la modélisation.</description>
+       <topic href="help/Text/properties_model.html" label="Propriétés de la modélisation"/>
+    </context>
+    <context id="usedInRelationshipsSection" title="Relations de la modélisation">
+       <description>Un tableau affichant les relations (s'il y en a) de et vers l'élément sélectionné dans la modélisation. Double-cliquer sur une entrée du tableau sélectionnera l'élément dans la fenêtre de l'arborescence des modèles si elle est ouverte.</description>
+       <topic href="help/Text/properties_element.html" label="Propriétés des éléments"/>
+    </context>
+    <context id="usedInViewsSection" title="Utilisés dans des vues">
+       <description>Un tableau affichant les vues (s'il y en a) dans lesquelles l'élément sélectionné est utilisé (affiché dans un diagramme). Double-cliquer sur une entrée du tableau ouvrira la vue et sélectionnera l'élément dans le diagramme.</description>
+       <topic href="help/Text/properties_element.html" label="Propriétés des éléments"/>
+    </context>
+    <context id="diagramFigureTypeSection" title="Type des figures">
+       <topic href="help/Text/properties_figures.html" label="Type des figures"/>
+       <description>Choisir la figure pour représenter cet élément.</description>
+    </context>
+    <context id="diagramEditorPaletteHelp" title="La palette">
+       <description>La palette est utilisée pour créer et sélectionner.</description>
+       <topic href="help/Text/view_palette.html" label="La palette"/>
+       <topic href="help/Text/view_palette_tools.html" label="Outils de sélection de la palette"/>
+       <topic href="help/Text/view_palette_creation_tools.html" label="Outils de création de la palette"/>
+       <topic href="help/Text/view_format_painter.html" label="L'applicateur de format"/>
+    </context>
+    <context id="prefsAppearance" title="Préférences d'apparence">
+       <description>Modifie les préférences d'apparence, de couleurs et des polices de caractères.</description>
+       <topic href="help/Text/prefs_appearance.html" label="Préférences d'apparence"/>
+    </context>
+    <context id="prefsCanvas" title="Préférences de canevas">
+       <description>Modifier les préférences de la boîte à outils de modélisation du canevas.</description>
+       <topic href="help/Text/prefs_canvas.html" label="Préférences de la boîte à outils de modélisation du canevas"/>
+    </context>
+    <context id="prefsConnections" title="Préférences des connexions">
+       <description>Modifier les préférences des connexions.</description>
+       <topic href="help/Text/prefs_connections.html" label="Préférences des connexions"/>
+    </context>
+    <context id="prefsDiagram" title="Préférences des diagrammes"
+       <description>Modifier les préférences des diagrammes.</description>
+       <topic href="help/Text/prefs_diagram.html" label="Préférences des diagrammes"/>
+    </context>
+    <context id="prefsGeneral" title="Préférences générales">
+       <description>Modifier les préférences générales.</description>
+       <topic href="help/Text/prefs_general.html" label="Préférences générales"/>
+    </context>
+    <context id="prefsJasper" title="Préférences des rapports Jasper">
+       <description>Modifier les préférences des rapports Jasper</description>
+       <topic href="help/Text/prefs_jasper.html" label="Préférences des rapports Jasper"/>
+    </context>
+    <context id="prefsValidator" title="Préférences du valideur">
+       <description>Modifier les préférences du valideur.</description>
+       <topic href="help/Text/prefs_validator.html" label="Préférences du valideur"/>
+    </context>
+    <context id="userProperties" title="Propriétés utilisateur">
+       <description>Modifier les propriétés utilisateur</description>
+       <topic href="help/Text/properties_user_properties.html" label="Propriétés utilisateur"/>
+       <topic href="help/Text/properties_element.html" label="Propriétés des éléments"/>
+    </context>
+    <context id="NewNestedRelationDialog" title="Relations des éléments conteneurs et éléments imbriqués">
+       <description>Ajouter une nouvelle relation d'élément imbriqué.</description>
+       <topic href="help/Text/view_container_nested.html" label="Relations des éléments conteneurs et des éléments imbriqués"/>
+    </context>
+    <context id="NewNestedRelationsDialog" title="Relations des éléments conteneurs et des éléments imbriqués">
+       <description>Ajouter de nouvelles relations d'éléments imbriqués.</description>
+       <topic href="help/Text/view_container_nested.html" label="Relations des éléments conteneurs et éléments imbriqués"/>
+    </context>
+    <context id="TemplateManagerDialog" title="Gérer vos gabarits">
+       <description>Gérer vos gabarits.</description>
+       <topic href="help/Text/templates_managing.html" label="Gérer vos gabarits"/>
+    </context>
+    <context id="NewArchimateModelFromTemplateWizardPage" title="Créer une nouvelle modélisation à partir d'un gabarit">
+       <description>Créer une nouvelle modélisation basée sur un gabarit existant.</description>
+       <topic href="help/Text/templates_new_model.html" label="Créer une nouvelle modélisation à partir d'un gabarit"/>
+    </context>
+    <context id="SaveArchimateModelAsTemplateWizardPage" title="Enregistrer une modélisation comme gabarit">
+       <description>Fournir le nom de gabarit, une description et une vignette principale.</description>
+       <topic href="help/Text/templates_new.html" label="Créer un nouveau gabarit"/>
+    </context>
+    <context id="SaveArchimateModelAsTemplateToCollectionWizardPage" title="Enregistrer une modélidation comme gabarit">
+       <description>Choisir d'inclure ou non le gabarit dans votre collection.</description>
+       <topic href="help/Text/templates_new.html" label="Créer un nouveau gabarit"/>
+    </context>
+    <context id="ExportJasperReportsWizardPage1" title="Rapports Jasper">
+       <description>Choisir le répertoire de destination, le titre du rapport et quels formats générés.</description>
+       <topic href="help/Text/reporting-jasper.html" label="Rapports Jasper"/>
+    </context>
+    <context id="ExportJasperReportsWizardPage2">
+       <description>Choisir le gabarit de rapport à utiliser.</description>
+       <topic href="help/Text/reporting-jasper.html" label="Rapports Jasper"/>
+    </context>
+    <context id="ImageManagerDialog" title="Choisir une image">
+       <description>Choisir une image</description>
+       <topic href="help/Text/image_chooser.html" label="Ajouter des images à des objets"/>
+    </context>
+    <context id="NewCanvasFromTemplateWizardPage" title="Créer un nouveau canevas à partir d'un gabarit">
+       <description>Créer un nouveau canevas basé sur un gabarit existant.</description>
+       <topic href="help/Text/canvas_new_from_template.html" label="Créer un nouveau canevas à partir d'un gabarit"/>
+    </context>
+    <context id="SaveCanvasAsTemplateWizardPage" title="Enregistrer le canevas comme gabarit">
+       <description>Fournir le nom du gabarit, une description et une vignette principale.</description>
+       <topic href="help/Text/canvas_save_as_template.htmls" label="Enregistrer un canevas comme gabarit"/>
+    </context>
+    <context id="SaveCanvasAsTemplateToCollectionWizardPage" title="Enregistrer un canevas comme gabarit">
+       <description>Choisir d'inclure le gabarit dans votre collection.</description>
+       <topic href="help/Text/canvas_save_as_template.html" label="Enregistrer un canevas comme gabarit"/>
+    </context>
+    <context id="CanvasTemplateManagerDialog" title="Gérer vos gabarits de canevas">
+       <description>Gérer vos gabarits de canevas</description>
+       <topic href="help/Text/canvas_templates_managing.html" label="Gérer vos gabarits de canevas"/>
+    </context>
+    <context id="RelationshipsMatrixDialog">
+       <description>Voir les relations ArchiMate autorisées</description>
+       <topic href="help/Text/relations_rules.html" label="Matrice des relations"/>
+    </context>
+    <context id="ExportAsImagePage">
+       <description>Exporter la vue actuelle en tant qu'image</description>
+       <topic href="help/Text/view_export.html" label="Exporter la vue comme image"/>
+    </context>
+    <context id="ExportAsCSVPage">
+       <description>Exporter la modélisation actuelle en fichiers CSV</description>
+       <topic href="help/Text/csv.html" label="Exporter en CSV"/>
+    </context>
+    <context id="GenerateViewDialog">
+       <description>Générer une vue à partir d'éléments</description>
+       <topic href="help/Text/generate_view.html" label="Générer une vue à partir d'élements"/>
+    </context>
+    <context id="ExportToXMLPage">
+        <description>Exporter une modélisation au format Open Group Exchange</description>
+        <topic label="Export et réglages" href="help/Text/exchange-export.html"/>
+    </context>
+    <context id="ExportToXMLPageMetadata">
+       <description>Ajouter des métadonnées au format Open Group XML</description>
+       <topic href="help/Text/exchange-export_metadata.html" label="Ajouter des métadonnées"/>
+    </context>
+    <context id="ManagePluginsDialog">
+       <description>Gérer les greffons</description>
+       <topic href="help/Text/plugins.html" label="Gérer les greffons"/>
+    </context>
+    <context id="ImportModel">
+       <description>Importer une modélisation dans la modélisation actuelle</description>
+       <topic href="help/Text/import-model.html" label="Importer une modélisation dans la modélisation actuelle"/>
+    </context>
+    <context id="ProfilesManagerDialog">
+       <description>Gérer les spécialisations des concepts</description>
+       <topic href="help/Text/specializations_manager.html" label="Gestionnaire des spécialisations"/>
+    </context>
+    
+</contexts>
