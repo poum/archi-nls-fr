@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<toc label="Guide utilisateur Archi">
+    
+ <topic href="help/Text/intro.html" label="Introduction">
+ </topic>
+ <topic href="help/Text/install.html" label="Installer et lancer Archi">
+ </topic>
+    <topic href="help/Text/archi_working.html" label="Travailler avec Archi">
+    </topic>
+    <topic href="help/Text/new_model.html" label="Créer un nouveau modèle ArchiMate">
+    </topic>
+    <topic label="L'arborescence des modèles">
+       <topic href="help/Text/model_tree.html" label="Introduction">
+       </topic>
+       <topic href="help/Text/model_tree_add.html" label="Ajouter directement des éléments dans l'arborescence des modèles">
+       </topic>
+       <topic href="help/Text/model_tree_folders.html" label="Dossiers et Organisation">
+       </topic>
+       <topic href="help/Text/model_tree_working.html" label="Travailler dans l'arborescence des modèles">
+       </topic>
+       <topic href="help/Text/model_tree_search.html" label="Recherche et filtrage">
+       </topic>
+    </topic>
+    <topic label="Vues">
+       <topic href="help/Text/views.html" label="Introduction">
+       </topic>
+       <topic href="help/Text/views_open_create.html" label="Ouvrir et créer des vues">
+       </topic>
+       <topic href="help/Text/views_working.html" label="Travailler avec des vues">
+       </topic>
+       <topic href="help/Text/view_nav.html" label="Naviguer dans une vue">
+          <topic href="help/Text/outline.html" label="La fenêtre d'apercu">
+          </topic>
+       </topic>
+       <topic href="help/Text/view_palette.html" label="La palette">
+          <topic href="help/Text/view_palette_tools.html" label="Outils de sélection">
+          </topic>
+          <topic href="help/Text/view_palette_creation_tools.html" label="Outils de création">
+          </topic>
+          <topic href="help/Text/view_format_painter.html" label="L'applicateur de format">
+          </topic>
+       </topic>
+       <topic href="help/Text/view_addnew.html" label="Ajouter de nouveaux éléments et de nouvelles relations">
+       </topic>
+       <topic href="help/Text/view_magic_connector.html" label="Ajouter de nouveaux éléments et de nouvelles relations avec le connecteur magique">
+       </topic>
+       <topic href="help/Text/view_addexisting.html" label="Ajouter des éléments et des relations depuis l'arborescence des modèles à une vue">
+       </topic>
+       <topic href="help/Text/view_group.html" label="Ajouter un groupe">
+       </topic>
+       <topic href="help/Text/view_note.html" label="Ajouter une note">
+       </topic>
+       <topic href="help/Text/view_junction.html" label="Ajouter une jonction">
+       </topic>
+       <topic href="help/Text/view_reference.html" label="Ajouter une référence vers une autre vue">
+       </topic>
+       <topic label="Connections">
+          <topic href="help/Text/view_conn_bendpoints.html" label="Points d'inflexion">
+          </topic>
+          <topic href="help/Text/view_conn_properties.html" label="Définir les propriétés d'une connexion">
+          </topic>
+          <topic href="help/Text/view_conn_router.html" label="Définir le type de connecteur de routage pour une vue">
+          </topic>
+       </topic>
+       <topic href="help/Text/view_container_nested.html" label="Éléments conteneurs et relations des éléments imbriqués">
+       </topic>
+       <topic href="help/Text/view_z_order.html" label="Définir l'ordre de recouvrement des éléments">
+       </topic>
+       <topic href="help/Text/view_copy_paste_delete.html" label="Copier, Coller, Sélectionner et Supprimer des éléments">
+       </topic>
+       <topic href="help/Text/view_align_grid.html" label="Outils d'alignement, guides et la grille">
+       </topic>
+       <topic href="help/Text/view_fullscreen.html" label="Afficher une vue en mode plein écran">
+       </topic>
+       <topic href="help/Text/view_export.html" label="Exporter la vue au format image">
+       </topic>
+    </topic>
+    <topic href="help/Text/viewpoints.html" label="Points de vue">
+    </topic>
+    <topic href="help/Text/properties_window.html" label="La fenêtre des propriétés">
+       <topic href="help/Text/properties_model.html" label="Propriétés des modèles">
+       </topic>
+       <topic href="help/Text/properties_element.html" label="Propriétés des éléments">
+       </topic>
+       <topic href="help/Text/properties_element_appearance.html" label="Propriétés d'apparence d'un élément">
+       </topic>
+       <topic href="help/Text/properties_relation.html" label="Propriétés des relations">
+       </topic>
+       <topic href="help/Text/properties_relation_appearance.html" label="Propriétés d'apparence des connexions des relations">
+       </topic>
+       <topic href="help/Text/properties_view.html" label="Propriétés des vues">
+       </topic>
+       <topic href="help/Text/properties_viewref.html" label="Propriétés de référence de vue">
+       </topic>
+       <topic href="help/Text/properties_folder.html" label="Propriétés des dossiers">
+       </topic>
+       <topic href="help/Text/properties_note.html" label="Propriétés des notes">
+       </topic>
+       <topic href="help/Text/properties_group.html" label="Propriétés des groupes">
+       </topic>
+       <topic href="help/Text/properties_user_properties.html" label="Propriétés utilisateur">
+       </topic>
+    </topic>
+    <topic href="help/Text/navigator.html" label="La fenêtre de navigation">
+    </topic>
+    <topic href="help/Text/visualiser.html" label="La fenêtre du visualiseur">
+    </topic>
+    <topic href="help/Text/hints.html" label="La fenêtre des conseils">
+    </topic>
+    <topic href="help/Text/outline.html" label="La fenêtre Panorama">
+    </topic>
+    <topic href="help/Text/tools.html" label="Outils">
+       <topic href="help/Text/generate_view.html" label="Génére une vue depuis un élément">
+       </topic>
+       <topic href="help/Text/properties_manager.html" label="Gestionnaire des propriétés">
+       </topic>
+       <topic href="help/Text/specializations_manager.html" label="Gestion des spécialisations">
+       </topic>
+       <topic href="help/Text/validator.html" label="Le valideur">
+       </topic>
+       <topic href="help/Text/preview_report.html" label="Aperçu de rapport HTML">
+       </topic>
+    </topic>
+    <topic href="help/Text/open_save_print.html" label="Ouvrir, enregistrer et imprimer">
+    </topic>
+    <topic href="help/Text/csv.html" label="Exporter et importer la modélisation au format CSV">
+    </topic>
+    <topic href="help/Text/import-model.html" label="Importer une autre modélisation dans la modélisation actuelle">
+    </topic>
+    <topic href="help/Text/exchange-intro.html" label="Le format d'échange ArchiMate de l'Open Group">
+       <topic href="help/Text/exchange-export.html" label="Export et réglages">
+       </topic>
+       <topic href="help/Text/exchange-export_metadata.html" label="Ajouter des métadonnées">
+       </topic>
+       <topic href="help/Text/exchange-import.html" label="Importer une modélisation depuis un fichier au format Open Exchange">
+       </topic>
+    </topic>
+    <topic href="help/Text/reporting.html" label="Rapports">
+       <topic href="help/Text/reporting-html.html" label="Rapports HTML">
+       </topic>
+       <topic href="help/Text/reporting-jasper.html" label="Rapports Jasper">
+       </topic>
+    </topic>
+    <topic href="help/Text/templates.html" label="Gabarits">
+       <topic href="help/Text/templates_new.html" label="Créer un nouveau gabarit">
+       </topic>
+       <topic href="help/Text/templates_new_model.html" label="Créer une nouvelle modélisation à partir d'un gabarit">
+       </topic>
+       <topic href="help/Text/templates_managing.html" label="Gérer vos gabarits">
+       </topic>
+    </topic>
+    <topic href="help/Text/relations_rules.html" label="Relations">
+    </topic>
+    <topic href="help/Text/sketch_view.html" label="La vue Esquisse">
+    </topic>
+    <topic href="help/Text/canvas.html" label="La boîte à outils de modélisation du canevas">
+       <topic href="help/Text/canvas_getting_started.html" label="Pour démarrer">
+       </topic>
+       <topic href="help/Text/canvas_details.html" label="Aller dans les détails">
+       </topic>
+       <topic href="help/Text/properties_canvas_block.html" label="Propriétés des blocs">
+       </topic>
+       <topic href="help/Text/properties_canvas_sticky.html" label="Propriétés des éléments adhésifs">
+       </topic>
+       <topic href="help/Text/properties_canvas_image.html" label="Propriétés des images">
+       </topic>
+       <topic href="help/Text/properties_canvas_connection.html" label="Propriétés des connexions">
+       </topic>
+       <topic href="help/Text/image_chooser.html" label="Ajouter des images à des objets">
+       </topic>
+       <topic href="help/Text/canvas_save_as_template.html" label="Enregistrer un canevas comme ganbarit">
+       </topic>
+       <topic href="help/Text/canvas_new_from_template.html" label="Créer un nouveau canevas à partir d'un gabarit">
+       </topic>
+       <topic href="help/Text/canvas_templates_managing.html" label="Gérer les gabarits des canevas">
+       </topic>
+    </topic>
+    <topic href="help/Text/preferences.html" label="Préférences">
+       <topic href="help/Text/prefs_appearance.html" label="Apparence">
+       </topic>
+       <topic href="help/Text/prefs_canvas.html" label="Boîte à outils du canevas">
+       </topic>
+       <topic href="help/Text/prefs_connections.html" label="Connexions">
+       </topic>
+       <topic href="help/Text/prefs_diagram.html" label="Diagramme">
+       </topic>
+       <topic href="help/Text/prefs_general.html" label="Générales">
+       </topic>
+       <topic href="help/Text/prefs_help.html" label="Aide">
+       </topic>
+       <topic href="help/Text/prefs_jasper.html" label="Rapport Jasper">
+       </topic>
+    </topic>
+    <topic href="help/Text/plugins.html" label="Greffons">
+    </topic>
+</toc>
