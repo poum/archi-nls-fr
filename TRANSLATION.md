@@ -54,7 +54,7 @@ Vous pouvez ajouter des greffons et notamment l'intégration de git.
 - Choisissez le répertoire de destination du code ('~/Dev/archì' par exemple) et cliquez sur "Next"
 - Patientez ...
 - Cliquez sur "Import existing Eclipse projets" puis sur "Next"
-- Cochez tous les projets **sauf** archi et archi/tests (ce sont des répertoires et pas des projets) puis cliquez sur "Finish"
-- On obtient finalement une arborescence de projets dont certains ont une croix rouge, problème que nous allons régler ensuite.
+- Cochez tous les projets puis cliquez sur "Finish".
+- On obtient finalement une arborescence de projets.
 
 
