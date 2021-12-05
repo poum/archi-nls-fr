@@ -57,4 +57,18 @@ Vous pouvez ajouter des greffons et notamment l'intégration de git.
 - Cochez tous les projets puis cliquez sur "Finish".
 - On obtient finalement une arborescence de projets.
 
+## Cpnfigurer la plateforme cible
 
+- trouver 'com.archimatetool.editor.product/archi.target' et ouvrir le fichier avec le Eclipse Target Editor 
+- dans l'éditeur, dans le coin en haut à droite, cliquer sur le lien "Set as Active Plateform". Notez que dans certains cas, ce lien contient le texte "Reload Target Plateform". Enumeration bas à droite de la fenêtre, s'affiche "Load Target Plateform" et un pourcentage pendant que Eclipse télécharge toutes les dépendances et ça peut prendre un moment. A l'issue, le lien devient "Reload Target Plateform".
+ 
+# Lancer Archi depuis Eclipse
+
+- Dans le Package Explorer d'Eclipse, trouvez le fichier 'product file' "com.archimatetool.editor.product/archi.product" situé juste au-dessus du fichier précédent, puis ouvrez le fichier dans le Product Configurator Editor d'Eclipse.
+- Dans l'éditeur, cliquez sur le lien "Launch an Eclipse Application in Debug mode" (en bas à gauche de l'éditeur).
+
+Note: à chaque fois que vous lancez Archi via le lien "Launch an Eclipse Application in Debug mode" du fichier archi.product, cela réinitialisera tous les paramétrages que vous aurez fait dans la configuration Debug/Run. Si vous avez ajouté manuellement d'atres greffons ou des fragments à la configuration Debug/Run, ils seront supprimés. Pour corriger ceci, une fois que vous avez lancé Archi via le fichier archi.product, modifiez et personnalisez la coniiguration Debug/Run puis exécutez-le depuis la barre d'outils Eclipse ou depuis le menu Run.
+
+## Atres réglages
+
+Pour simuler un zoom de 200% sur un moniteur sans Hi-DPI, utilisez le paramètre de programme -Dswt.autoScale=200 sur Windows ou configurez la variable d'environnement GDK_SCALE=2 sous Linux.
