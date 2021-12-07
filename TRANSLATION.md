@@ -57,12 +57,12 @@ Vous pouvez ajouter des greffons et notamment l'intégration de git.
 - Cochez tous les projets puis cliquez sur "Finish".
 - On obtient finalement une arborescence de projets.
 
-## Cpnfigurer la plateforme cible
+## Configurer la plateforme cible
 
 - trouver 'com.archimatetool.editor.product/archi.target' et ouvrir le fichier avec le Eclipse Target Editor 
 - dans l'éditeur, dans le coin en haut à droite, cliquer sur le lien "Set as Active Plateform". Notez que dans certains cas, ce lien contient le texte "Reload Target Plateform". Enumeration bas à droite de la fenêtre, s'affiche "Load Target Plateform" et un pourcentage pendant que Eclipse télécharge toutes les dépendances et ça peut prendre un moment. A l'issue, le lien devient "Reload Target Plateform".
  
-# Lancer Archi depuis Eclipse
+## Lancer Archi depuis Eclipse
 
 - Dans le Package Explorer d'Eclipse, trouvez le fichier 'product file' "com.archimatetool.editor.product/archi.product" situé juste au-dessus du fichier précédent, puis ouvrez le fichier dans le Product Configurator Editor d'Eclipse.
 - Dans l'éditeur, cliquez sur le lien "Launch an Eclipse Application in Debug mode" (en bas à gauche de l'éditeur).
@@ -73,29 +73,13 @@ Note: à chaque fois que vous lancez Archi via le lien "Launch an Eclipse Applic
 
 Pour simuler un zoom de 200% sur un moniteur sans Hi-DPI, utilisez le paramètre de programme -Dswt.autoScale=200 sur Windows ou configurez la variable d'environnement GDK_SCALE=2 sous Linux.
 
-##
-
-> Please note that these instructions may now be out of date or incorrect. Please feel free to update any errors.
-
-> 14 February 2018 - Konstantin Borisov has created a Git repository that contains the English language pack that you may find easier to work with. For more information see https://github.com/smeagol74/archi-nls
-
-## Pre-requisites
-
-In order to make Archi Language Packs you need to install Eclipse and the Archi code. Please read the following sections before proceeding:
-
-* [[Setting up the Eclipse Environment|Setting-up-the-Eclipse-Environment]]
-* [[Importing the Code|Importing-the-Code]]
-* [[Running and Debugging Archi|Running-and-Debugging-Archi]]
-
-## Background
-
 Archi's default language is British English. It is possible to run Archi in non-English languages by producing language packs. A language pack is a collection of plug-ins that contain translated *.properties files. Every string that is used in Archi has been externalised into a number of *.properties files. The aim is to produce a mirror set of all of the *.properties files with translated values and bundle these together for redistribution.
 
 As well as translating Archi's language strings remember that Archi is built upon the Eclipse platform which itself consists of a number of plug-ins. These plug-ins also need translating. Luckily this work has been done for some languages in the <a href="http://www.eclipse.org/babel/">Eclipse Babel Project</a>.
 
-## Translating Properties Files, Packages and Unicode Characters
+## Traduire les fichiers de propriétés, les packages et les caractères unicode
 
-The following is an example of part of a `messages.properties` file taken from the `com.archimatetool.editor.actions` package in the `com.archimatetool.editor` plug-in:
+Ce qui suit est un exemple d'une partie du fichier 'messages.properties' du package 'com.archimatetool.editor.actions' dans le greffon 'com.archimatetool.editor':
 
 ```
 ArchimateEditorActionFactory_0=&Delete
@@ -107,71 +91,60 @@ ArchimateEditorActionFactory_5=Close Model
 ArchimateEditorActionFactory_6=Duplicate
 ```
 
-If you look at the Archi code in Eclipse you will see that each plug-in contains a "plugin.properties" file and most Java packages within the plug-in contain one "messages.properties" file. Each of these properties files need to be copied to a new language plug-in, renamed to "plugin_xx.properties" and "messages_xx.properties" where "xx" is the target language code, and the values translated into the target language.
+Si vous regardez le code Archi dans Eclipse, vous verrez que chaque greffon contient un fichier "plugin.properties" et la plupart des packages Java qui s'y trouvent contiennet un fichier "messages.properties". Chacun de ces fichiers de propriétés doit être copié dans un nouveau greffon de langue, renommé en "plugin_xx.properties" ou "messages_xx.properties" où "xx" est le code de la langue cible, "fr" pour nous.
 
-Each line in a properties file consists of a key, an equals sign (=), and a value. The key and equals sign (=) must not be changed. It is only the value that must be translated.
+Chaque ligne d'un fichier de propriétés comporte une clef, un signe égal (=) et une valeur. La clef et le signe égal (=) ne doivent pas être modifiés. Seule la valeur doit être traduite.
 
-## Unicode characters
+## Caractères Unicode
 
-Some characters cannot be saved "as is" to the properties file. Consider the French phrase "Son père est allé à l'hôtel". This contains four accented characters that are not part of the Latin-1 codepage. These characters have to be written as Unicode characters:
+Certains caractères ne peuvent être enregistrés "tels quels" dans le fichier de propriétés. Prenez la phrase "Son père est allé à l'hôtel". Elle contient quatre caractères accentués qui ne font pas partie de l'encodage latin-1. Ces caractères doivent être écrits sous forme de caractères Unicode:
+
 
 ```
 Son p\u00e8re est all\u00e9 \u00e0 h\u00f4tel
 ```
+Heureusement, le traducteur n'a pas à se préoccuper de ça car il existe des outils qui permettent à l'utilisateur de saisir les chaînes de caractères des valeurs dans leur langue maternelle et l'outil enregistrera les valeurs sous forme de caractères Unicode.
 
-This is the case for all the characters in languages such as Russian and Bulgarian. For example, the following is an example taken from the Russian Eclipse Babel language pack:
+## Outil de traduction
 
-```
-NewEditorAction_text=\u0421\u043e\u0437\u0434\u0430\u0442\u044c &\u0440\u0435\u0434\u0430\u043a\u0442\u043e\u0440
-NewEditorAction_tooltip=\u0421\u043e\u0437\u0434\u0430\u0442\u044c \u0440\u0435\u0434\u0430\u043a\u0442\u043e\u0440
-SaveAction_text=\u0421\u043e\u0445\u0440\u0430\u043d\u0438\u0442\u044c@Ctrl+S
-SaveAction_toolTip=\u0421\u043e\u0445\u0440\u0430\u043d\u0438\u0442\u044c
-SaveAs_text=\u0421\u043e\u0445\u0440\u0430\u043d\u0438\u0442\u044c &\u043a\u0430\u043a...
-SaveAs_toolTip=\u0421\u043e\u0445\u0440\u0430\u043d\u0438\u0442\u044c \u043a\u0430\u043a
-SaveAll_text=\u0421\u043e&\u0445\u0440\u0430\u043d\u0438\u0442\u044c \u0432\u0441\u0435
-SaveAll_toolTip=\u0421\u043e\u0445\u0440\u0430\u043d\u0438\u0442\u044c \u0432\u0441\u0435
-```
-Fortunately, the Russian translator does not have to worry about this, as there are tools that allow the user to type the string values in the native language and the tool will save the values as Unicode characters.
+Nous avons écrit un outil de ce type qui peut être utilisé directement depuis Eclipse. C'est un greffon éditeur qui vous permet de modifier les fichiers de propriétés dans la langue maternelle de l'utilisateur.
 
-## Translation Tool
-We have written such a tool that can be used within Eclipse itself. It is an editor plug-in that allows you to edit the properties files in the user's native language.
-
-The tool can be downloaded here:
+L'outil peut être téléchargé ici:
 
 <a href="https://www.archimatetool.com/downloads/plugins/com.dadabeatnik.properties.editor_1.0.0.201202091951.jar">com.dadabeatnik.properties.editor_1.0.0.201202091951.jar</a>
 
-Place this jar file in the "dropins" folder of your Eclipse installation and restart Eclipse. We will use this tool later.
+Placez ce fichier jar dans le dossier "dropins" dans le répertoire d'installation d'Eclipse puis redémarrez ce dernier. Nous utiliserons cet outil ultérieurement.
 
-## Steps for Translation
+## Étapes pour la traduction
 
-The necessary steps for translation are:
+Les étapes indispensables pour réaliser une traduction sont:
 
-1. Create target plug-in projects for the Archi plug-ins
-2. Translate the strings in the properties files
-3. Export the plug-in projects
-4. Download the Eclipse language packs for the target language from the Eclipse Babel Project
-5. Package everything as a target language pack and install
+1. Créer des projets de greffons cibles pour les greffons Archi
+2. Traduisez les chaînes de caractères des valeurs dans les fichiers de propriétés
+3. Exportez les projets de greffons
+4. Téléchargez les pacls de langue Eclipse correspondants à la langue cible dans le projet Babel Eclipse
+5. Packagez le tout sous forme d'un pack de langue cible et installez-le
 
-## Create target plug-in projects for the Archi plug-ins
+## Créez des projets de greffon cible pour tous les greffons Archi
 
-1. Launch Eclipse
-2. Open the "com.archimatetool.nls" project in the Package Explorer and find the "create-nls.xml" file and open it.
-3. This file is an Ant script that will create the language pack projects from source projects. You will need to edit some values before you run it:
+1. Lancez Eclipse
+2. Ouvrez le projet "com.archimatetools.nls" dans l'explorateur de package, trouvez le fichier "create-nls.xml" et ouvrez-le.
+3. Ce fichier est un script Ant qui va créer les projets du pack de langue à partir des projets source. Vous devrez modifier certaines valeurs avant de l'exécuter:
 
 ![edit-nls-ant](https://user-images.githubusercontent.com/600504/43652873-599db250-973e-11e8-9f68-e6bbfcf1c2a5.png)
 
-Change the first value from "en" to the language code of the target language (for example, "ru" for Russian, "de" for German).
+Modifiez la première valeur de "en" en "fr" (le code de langue cible).
 
-Change the second value to the version of the language pack you are creating.
+Modifiez la seconde valeur pour lui donner la version du pack de langue que vous allez créer.
 
-4. Save the file "create-nls.xml"
-5. Right-click on the file "create-nls.xml" in the Package Explorer in Eclipse and select "Run As -> Ant Build". The language plug-ins will be created but you won't see them yet in the Package Explorer until you import them.
-6. From the main Eclipse menu select "File -> Import...". In the Import wizard select "General -> Existing Projects into Workspace".
-7. In the wizard select the "nls" folder that has now been created in your Archi source folder:
+4. Enregistrer le fichier "create-nls.xml"
+5. Faites un clic droit sur le fichier "create-nls.xml" dans l'explorateur de packages d'Eclipse puis choisissez "Run As -> Ant Build". Les greffons de langue seront créés mais vous ne les verrez pas dans l'explorateur de packages tant que vous ne les aurez pas importés.
+6. Dans le menu principal d'Eclipse, choisissez "File -> Import...". Dans l'assistant d'import, choisissez "General -> Existing Projects into Workspace".
+7. Dans l'assistant, choisissez le dossier "nls" qui a désormais été créé dans votre dossier source Archi:
 
 ![import-nls](https://user-images.githubusercontent.com/600504/43652904-6e7efae4-973e-11e8-90c9-e8569b93464b.png)
 
-8. Press "Finish" in the wizard
+8. Appuyez sur "Finish" dans l'assistant
 
 ## Outputs
 
